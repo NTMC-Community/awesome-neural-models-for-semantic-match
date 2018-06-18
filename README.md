@@ -24,8 +24,7 @@
 
 ### Models
 
-#### DSSM
-![status](artworks/ready.svg)
+**DSSM** ![status](artworks/ready.svg)
 
 Learning Deep Structured Semantic Models for Web Search using Clickthrough Data.
 [website](https://www.microsoft.com/en-us/research/publication/learning-deep-structured-semantic-models-for-web-search-using-clickthrough-data/) | [paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf) | [tutorial](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/07/dl-summer-school-2017.-Jianfeng-Gao.v2.pdf)

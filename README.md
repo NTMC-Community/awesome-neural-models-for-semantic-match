@@ -15,19 +15,19 @@
 ### Contents
 ------
 + Models
-    - [DSSM](#DSSM)
-    - [CDSSM](#CDSSM)
-    - [ARC-I](#ARC-I)
-    - [ARC-II](#ARC-II)
-    - [MV-LSTM](#MV-LSTM)
-    - [DRMM](#DRMM)
-    - [K-NRM](#K-NRM)
-    - [aNMM](#aNMM)
-    - [DUET](#DUET)
-    - [MatchPyramid](#MatchPyramid)
-    - [DRMM-TKS](#DRMM-TKS)
-    - [DeepRank](#DeepRank)
-    - [Match-SRNN](#Match-SRNN)
+    - [DSSM](#dssm)
+    - [CDSSM](#cdssm)
+    - [ARC-I](#arc-i)
+    - [ARC-II](#arc-ii)
+    - [MV-LSTM](#mv-lstm)
+    - [DRMM](#drmm)
+    - [K-NRM](#k-nrm)
+    - [aNMM](#anmm)
+    - [DUET](#duet)
+    - [MatchPyramid](#matchpyramid)
+    - [DRMM-TKS](#drmm-tks)
+    - [DeepRank](#deeprank)
+    - [Match-SRNN](#match-srnn)
 
 
 ### Models

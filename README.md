@@ -15,10 +15,13 @@
 ### Contents
 ------
 + Models
+    - [DESM](#desm)
     - [DSSM](#dssm)
     - [CDSSM](#cdssm)
+    - [LSTM-DSSM](#lstm-dssm)
     - [ARC-I](#arc-i)
     - [ARC-II](#arc-ii)
+    - [MultiGranCNN](#mutigrancnn)
     - [MV-LSTM](#mv-lstm)
     - [DRMM](#drmm)
     - [K-NRM](#k-nrm)
@@ -28,10 +31,19 @@
     - [DRMM-TKS](#drmm-tks)
     - [DeepRank](#deeprank)
     - [Match-SRNN](#match-srnn)
+    - [Co-PACRR](#co-pacrr)
+    - [DLCM](#dlcm)
 
 
 ### Models
 ------
+
+#### DESM:
+![status](artworks/not-in-plan.svg)
+
+A Dual Embedding Space Model for Document Ranking.
+[website](https://arxiv.org/abs/1602.01137) | [paper](https://arxiv.org/pdf/1602.01137.pdf)
+
 
 #### DSSM:
 ![status](artworks/ready.svg)
@@ -48,6 +60,12 @@ Learning Semantic Representations Using Convolutional Neural Networks for Web Se
 A Latent Semantic Model with Convolutional-Pooling Structure for Information Retrieval (2014b).
 [website](https://www.microsoft.com/en-us/research/publication/a-latent-semantic-model-with-convolutional-pooling-structure-for-information-retrieval/) | [paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2014_cdssm_final.pdf)
 
+#### LSTM-DSSM
+![status](artworks/not-in-plan.svg)
+
+Deep Sentence Embedding Using Long Short-Term Memory Networks: Analysis and Application to Information Retrieval.
+[website](https://arxiv.org/abs/1502.06922) | [paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/02/LSTM_DSSM_IEEE_TASLP.pdf)
+
 #### ARC-I
 ![status](artworks/ready.svg)
 
@@ -59,6 +77,12 @@ Convolutional Neural Network Architectures for Matching Natural Language Sentenc
 
 Convolutional Neural Network Architectures for Matching Natural Language Sentences.
 [website](https://arxiv.org/abs/1503.03244) | [paper](https://arxiv.org/pdf/1503.03244.pdf)
+
+#### MultiGranCNN
+![status](artworks/not-in-plan.svg)
+
+MultiGranCNN: An Architecture for General Matching of Text Chunks on Multiple Levels of Granularity.
+[paper](https://aclanthology.info/pdf/P/P15/P15-1007.pdf)
 
 #### MV-LSTM
 ![status](artworks/ready.svg)
@@ -113,4 +137,16 @@ DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval
 
 Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN.
 [website](https://arxiv.org/abs/1604.04378) | [paper](https://arxiv.org/pdf/1604.04378.pdf)
+
+#### Co-PACRR
+![status](artworks/not-in-plan.svg)
+
+Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval.
+[website](https://arxiv.org/abs/1706.10192) | [paper](https://arxiv.org/pdf/1706.10192.pdf)
+
+#### DLCM
+![status](artworks/not-in-plan.svg)
+
+Learning a Deep Listwise Context Model for Ranking Refinement. *NEW, TO BE APPEARED IN SIGIR 2018*
+[website](https://arxiv.org/abs/1804.05936) | [paper](https://arxiv.org/pdf/1804.05936.pdf)
 

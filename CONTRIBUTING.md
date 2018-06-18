@@ -12,5 +12,5 @@ Format:
 #### MODEL-NAME
 ![status](artworks/not-in-plan.svg)
 
-[PAPER-TITLE]
+PAPER-TITLE
 [LINK-TO-WEBSITE (SUCH AS ARXIV)]() | [LINK-TO-PAPER]()

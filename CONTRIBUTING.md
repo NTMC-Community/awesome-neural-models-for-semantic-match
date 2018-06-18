@@ -14,3 +14,5 @@ Format:
 
 PAPER-TITLE
 [LINK-TO-WEBSITE (SUCH AS ARXIV)]() | [LINK-TO-PAPER]()
+
+To proposed a new model (MatchZoo feature request), navigate to [MatchZoo Issues](https://github.com/faneshion/MatchZoo/issues).

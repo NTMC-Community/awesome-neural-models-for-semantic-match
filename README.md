@@ -141,7 +141,7 @@ Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN.
 #### Co-PACRR
 ![status](artworks/not-in-plan.svg)
 
-
+Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval.
 [website](https://arxiv.org/abs/1706.10192) | [paper](https://arxiv.org/pdf/1706.10192.pdf)
 
 #### DLCM

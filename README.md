@@ -17,6 +17,16 @@
 + Models
     - [DSSM](#DSSM)
     - [CDSSM](#CDSSM)
+    - [ARC-I](#ARC-I)
+    - [ARC-II](#ARC-II)
+    - [MV-LSTM](#MV-LSTM)
+    - [DRMM](#DRMM)
+    - [K-NRM](#K-NRM)
+    - [aNMM](#aNMM)
+    - [DUET](#DUET)
+    - [MatchPyramid](#MatchPyramid)
+    - [DRMM-TKS](#DRMM-TKS)
+    - [DeepRank](#DeepRank)
 
 
 ### Models

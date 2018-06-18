@@ -8,7 +8,7 @@ Feel free to send PR to newest neural networks models related to *INFORMATION RE
 Format:
 
 #### MODEL-NAME
-![status](artworks/not-in-plan)
+![status](artworks/not-in-plan.svg)
 
 [PAPER-TITLE]
 [LINK-TO-WEBSITE (SUCH AS ARXIV)]() | [LINK-TO-PAPER]()

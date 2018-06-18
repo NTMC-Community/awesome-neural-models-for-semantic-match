@@ -37,4 +37,34 @@ Learning Semantic Representations Using Convolutional Neural Networks for Web Se
 A Latent Semantic Model with Convolutional-Pooling Structure for Information Retrieval (2014b).
 [website](https://www.microsoft.com/en-us/research/publication/a-latent-semantic-model-with-convolutional-pooling-structure-for-information-retrieval/) | [pdf](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2014_cdssm_final.pdf)
 
+#### ARC-I
+![status](artworks/ready.svg)
+
+#### ARC-II
+![status](artworks/ready.svg)
+
+#### MV-LSTM
+![status](artworks/ready.svg)
+
+#### DRMM
+![status](artworks/ready.svg)
+
+#### K-NRM
+![status](artworks/ready.svg)
+
+#### aNMM
+![status](artworks/ready.svg)
+
+#### DUET
+![status](artworks/ready.svg)
+
+#### MatchPyramid
+![status](artworks/ready.svg)
+
+#### DRMM-TKS
+![status](artworks/ready.svg)
+
+#### DeepRank
+![status](artworks/plan.svg)
+
 

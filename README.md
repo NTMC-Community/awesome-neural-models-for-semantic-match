@@ -29,6 +29,7 @@
     - [DUET](#duet)
     - [MatchPyramid](#matchpyramid)
     - [DRMM-TKS](#drmm-tks)
+    - [BiMPM](#bimpm)
     - [DeepRank](#deeprank)
     - [Match-SRNN](#match-srnn)
     - [Co-PACRR](#co-pacrr)
@@ -126,8 +127,14 @@ Text Matching as Image Recognition
 A Deep Relevance Matching Model for Ad-hoc Retrieval (*A variation of DRMM).
 [website](https://arxiv.org/abs/1711.08611) | [paper](http://www.bigdatalab.ac.cn/~gjf/papers/2016/CIKM2016a_guo.pdf)
 
+#### BiMPM
+![status](artworks/ready.svg)
+
+Bilateral Multi-Perspective Matching for Natural Language Sentences
+[website](https://arxiv.org/abs/1702.03814) | [paper](https://arxiv.org/pdf/1702.03814.pdf)
+
 #### DeepRank
-![status](artworks/plan.svg)
+![status](artworks/progress.svg)
 
 DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval
 [website](https://arxiv.org/abs/1710.05649) | [paper](https://arxiv.org/pdf/1710.05649.pdf)

@@ -15,6 +15,7 @@
 ### Contents
 ------
 + Models
+    - [GLM](#glm)
     - [DESM](#desm)
     - [DSSM](#dssm)
     - [CDSSM](#cdssm)
@@ -38,6 +39,12 @@
 
 ### Models
 ------
+
+#### GLM:
+![status](artworks/not-in-plan.svg)
+
+A Word Embedding based Generalized Language Model for Information Retrieval.
+[website](https://dl.acm.org/citation.cfm?id=2767780) | [paper](http://www.cs.unibo.it/~montesi/CBD/Articoli/2015_A%20Word%20Embedding%20based%20Generalized%20Language%20Model%20for%20Information%20Retrieval.pdf)
 
 #### DESM:
 ![status](artworks/not-in-plan.svg)

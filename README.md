@@ -1,14 +1,14 @@
 <div align="center">
 	<img width="300" src="artworks/awaresome.svg" alt="Awesome">
-    <br>
-    <br>
-    <p><b>Awaresome Neural Models for Semantic Match</b></p>
+	<br>
+	<br>
+	<p><b>Awaresome Neural Models for Semantic Match</b></p>
 </div>
 <br>
 <p align="center">
     <sub>A collection of papers maintained by MatchZoo Team.</sub>
     <br>
-	<sub>Checkout our open source toolkit <a href="https://github.com/faneshion/MatchZoo">MatchZoo</a> for more information!</sub>
+    <sub>Checkout our open source toolkit <a href="https://github.com/faneshion/MatchZoo">MatchZoo</a> for more information!</sub>
 </p>
 <br>
 
@@ -26,6 +26,7 @@
     - [MV-LSTM](#mv-lstm)
     - [DRMM](#drmm)
     - [K-NRM](#k-nrm)
+    - [CONV-KNRM](#conv-knrm)
     - [aNMM](#anmm)
     - [DUET](#duet)
     - [MatchPyramid](#matchpyramid)
@@ -110,7 +111,15 @@ A Deep Relevance Matching Model for Ad-hoc Retrieval.
 End-to-End Neural Ad-hoc Ranking with Kernel Pooling.
 [website](https://arxiv.org/abs/1706.06613) | [paper](https://arxiv.org/pdf/1706.06613.pdf)
 
+#### CONV-KNRM
+
+![status](artworks/ready.svg)
+
+Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search.
+[website](https://dl.acm.org/citation.cfm?id=3159659) | [paper](http://www.cs.cmu.edu/~zhuyund/papers/WSDM_2018_Dai.pdf)
+
 #### aNMM
+
 ![status](artworks/ready.svg)
 
 aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model.
@@ -147,7 +156,7 @@ DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval
 [website](https://arxiv.org/abs/1710.05649) | [paper](https://arxiv.org/pdf/1710.05649.pdf)
 
 #### Match-SRNN
-![status](artworks/plan.svg)
+![status](artworks/progress.svg)
 
 Match-SRNN: Modeling the Recursive Matching Structure with Spatial RNN.
 [website](https://arxiv.org/abs/1604.04378) | [paper](https://arxiv.org/pdf/1604.04378.pdf)

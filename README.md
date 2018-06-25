@@ -22,7 +22,7 @@
     - [LSTM-DSSM](#lstm-dssm)
     - [ARC-I](#arc-i)
     - [ARC-II](#arc-ii)
-    - [MultiGranCNN](#mutigrancnn)
+    - [MultiGranCNN](#multigrancnn)
     - [MV-LSTM](#mv-lstm)
     - [DRMM](#drmm)
     - [K-NRM](#k-nrm)

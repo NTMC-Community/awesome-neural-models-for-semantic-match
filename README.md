@@ -36,7 +36,7 @@
     - [Match-SRNN](#match-srnn)
     - [Co-PACRR](#co-pacrr)
     - [DLCM](#dlcm)
-    - [Siamese-LSTM](siamese-lstm)
+    - [Siamese-LSTM](#siamese-lstm)
 
 
 ### Models

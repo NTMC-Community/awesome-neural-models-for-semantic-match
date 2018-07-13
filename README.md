@@ -22,7 +22,7 @@
     - [LSTM-DSSM](#lstm-dssm)
     - [ARC-I](#arc-i)
     - [ARC-II](#arc-ii)
-    - [MultiGranCNN](#mutigrancnn)
+    - [MultiGranCNN](#multigrancnn)
     - [MV-LSTM](#mv-lstm)
     - [DRMM](#drmm)
     - [K-NRM](#k-nrm)
@@ -36,6 +36,7 @@
     - [Match-SRNN](#match-srnn)
     - [Co-PACRR](#co-pacrr)
     - [DLCM](#dlcm)
+    - [Siamese-LSTM](#siamese-lstm)
 
 
 ### Models
@@ -172,4 +173,13 @@ Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval.
 
 Learning a Deep Listwise Context Model for Ranking Refinement. *NEW, TO BE APPEARED IN SIGIR 2018*
 [website](https://arxiv.org/abs/1804.05936) | [paper](https://arxiv.org/pdf/1804.05936.pdf)
+
+#### Siamese-LSTM
+![status](artworks/not-in-plan.svg)
+
+Siamese Recurrent Architectures for Learning Sentence Similarity.
+[website](https://dl.acm.org/citation.cfm?id=3016291) | [paper](http://www.mit.edu/~jonasm/info/MuellerThyagarajan_AAAI16.pdf)
+
+Learning Text Similarity with Siamese Recurrent Networks.
+[website](https://sites.google.com/site/repl4nlp2016/accepted-papers) | [paper](http://www.aclweb.org/anthology/W16-16#page=162)
 

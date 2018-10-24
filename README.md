@@ -37,6 +37,7 @@
     - [Co-PACRR](#co-pacrr)
     - [DLCM](#dlcm)
     - [Siamese-LSTM](#siamese-lstm)
+    - [ESIM](#esim)
 
 
 ### Models
@@ -183,3 +184,9 @@ Siamese Recurrent Architectures for Learning Sentence Similarity.
 Learning Text Similarity with Siamese Recurrent Networks.
 [website](https://sites.google.com/site/repl4nlp2016/accepted-papers) | [paper](http://www.aclweb.org/anthology/W16-16#page=162)
 
+
+#### ESIM
+![status](artworks/not-in-plan.svg)
+
+Enhanced LSTM for Natural Language Inference * ACL 2017
+[website](https://arxiv.org/abs/1609.06038) | [paper](https://arxiv.org/pdf/1609.06038.pdf)

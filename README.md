@@ -30,7 +30,7 @@
     - [aNMM](#anmm)
     - [DUET](#duet)
     - [MatchPyramid](#matchpyramid)
-    - [match-LSTM](#matchlstm)
+    - [match-LSTM](#match-lstm)
     - [DRMM-TKS](#drmm-tks)
     - [BiMPM](#bimpm)
     - [DeepRank](#deeprank)

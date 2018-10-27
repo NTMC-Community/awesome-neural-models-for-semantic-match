@@ -30,6 +30,7 @@
     - [aNMM](#anmm)
     - [DUET](#duet)
     - [MatchPyramid](#matchpyramid)
+    - [match-LSTM](#match-lstm)
     - [DRMM-TKS](#drmm-tks)
     - [BiMPM](#bimpm)
     - [DeepRank](#deeprank)
@@ -138,6 +139,12 @@ Learning to Match using Local and Distributed Representations of Text for Web Se
 
 Text Matching as Image Recognition
 [website](https://arxiv.org/abs/1602.06359) | [paper](https://arxiv.org/pdf/1602.06359.pdf)
+
+#### match-LSTM
+![status](artworks/progress.svg)
+
+Learning Natural Language Inference with LSTM
+[website](https://arxiv.org/abs/1512.08849) | [paper](http://www.aclweb.org/anthology/N16-1170)
 
 #### DRMM-TKS
 ![status](artworks/ready.svg)

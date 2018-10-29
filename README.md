@@ -39,6 +39,9 @@
     - [DLCM](#dlcm)
     - [Siamese-LSTM](#siamese-lstm)
     - [ESIM](#esim)
+    - [MCAN](#mcan)
+    - [MIX](#mix)
+    - [HiNT](#hint)
 
 
 ### Models
@@ -197,3 +200,21 @@ Learning Text Similarity with Siamese Recurrent Networks.
 
 Enhanced LSTM for Natural Language Inference * ACL 2017
 [website](https://arxiv.org/abs/1609.06038) | [paper](https://arxiv.org/pdf/1609.06038.pdf)
+
+#### MCAN
+![status](artworks/not-in-plan.svg)
+
+Multi-Cast Attention Networks for Retrieval-based Question Answering and Response Prediction
+[website](https://arxiv.org/abs/1806.00778) | [paper](https://arxiv.org/pdf/1806.00778.pdf)
+
+#### MIX
+![status](artworks/not-in-plan.svg)
+
+MIX: Multi-Channel Information Crossing for Text Matching
+[website](http://www.kdd.org/kdd2018/accepted-papers/view/mix-multi-channel-information-crossing-for-text-matching) | [paper](https://sites.ualberta.ca/~dniu/Homepage/Publications_files/hchen-kdd18.pdf)
+
+#### HiNT
+![status](artworks/not-in-plan.svg)
+
+Modeling Diverse Relevance Patterns in Ad-hoc Retrieval
+[website](https://arxiv.org/abs/1805.05737) | [paper](https://arxiv.org/pdf/1805.05737.pdf)

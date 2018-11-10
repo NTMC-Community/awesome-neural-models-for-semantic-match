@@ -107,7 +107,7 @@ A Deep Architecture for Semantic Matching with Multiple Positional Sentence Repr
 [website](https://arxiv.org/abs/1511.08277) | [paper](https://arxiv.org/pdf/1511.08277.pdf)
 
 #### ABCNN
-![status](artworks/ready.svg)
+![status](artworks/not-in-plan.svg)
 
 ABCNN: Attention-Based Convolutional Neural Network for Modeling Sentence Pairs.
 [website](https://arxiv.org/abs/1512.05193) | [paper](https://arxiv.org/pdf/1512.05193)

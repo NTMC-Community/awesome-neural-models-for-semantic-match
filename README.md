@@ -225,3 +225,11 @@ MIX: Multi-Channel Information Crossing for Text Matching
 
 Modeling Diverse Relevance Patterns in Ad-hoc Retrieval
 [website](https://arxiv.org/abs/1805.05737) | [paper](https://arxiv.org/pdf/1805.05737.pdf)
+
+
+### Healthcheck
+
+```python
+pip3 install -r requirements.txt
+python3 healthcheck.py
+```

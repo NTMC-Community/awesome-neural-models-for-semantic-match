@@ -18,7 +18,7 @@ Text matching is a core component in many natural language processing tasks, whe
 <img width="300" src="artworks/equation.png" alt="equation">
 </div>
 
-Where **s** and **t** are source text input and target text input, respectively. The $\psi$ and $\phi$ are representation function for input **s** and **t**, respectively. The **** is the interaction function, and **g** is the aggregation function. More detailed explaination about this formula can be found on [A Deep Look into Neural Ranking Models for Information Retrieval](https://arxiv.org/abs/1903.06902). The representative matching tasks are as follows:
+Where **s** and **t** are source text input and target text input, respectively. The **psi** and **phi** are representation function for input **s** and **t**, respectively. The **f** is the interaction function, and **g** is the aggregation function. More detailed explaination about this formula can be found on [A Deep Look into Neural Ranking Models for Information Retrieval](https://arxiv.org/abs/1903.06902). The representative matching tasks are as follows:
 
 <table>
 <tr>

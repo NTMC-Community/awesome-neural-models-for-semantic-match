@@ -14,7 +14,7 @@
 
 Text matching is a core component in many natural language processing tasks, where many task can be viewed as a matching between two texts input.
 
-​<div align="center">
+<div align="center">
 <img width="300" src="artworks/equation.png" alt="equation">
 </div>
 
@@ -325,8 +325,16 @@ Enhanced LSTM for Natural Language Inference. *ACL 2017*.
 
 Natural Lanuguage Inference Over Interaction Space. *ICLR 2018*.
 
-DIIN refers to Densely Interactive Inference Network which consists of four stacked layers, namely embedding layer, encoding layer, interaction layer, feature extraction layer, and output layer. The embedding layer concatenate word embedding, characture feature and syntactical features. Then, the encoding layer is a two-layer highway network, with an self-attention layer in the follows. Next, the interaction layer constructs an interaction matrix based on previous layer's outputs. And, the feature extraction layer utilizes [DenseNet](https://arxiv.org/abs/1608.06993) as convolutional feature extractor. Finally, a linear layer is applied to classify final flattened feature representation to predefined classes.
+> DIIN refers to Densely Interactive Inference Network which consists of five stacked layers, namely embedding layer, encoding layer, interaction layer, feature extraction layer, and output layer. The embedding layer concatenate word embedding, characture feature and syntactical features. Then, the encoding layer is a two-layer highway network, with an self-attention layer in the follows. Next, the interaction layer constructs an interaction matrix based on previous layer's outputs. And, the feature extraction layer utilizes [DenseNet](https://arxiv.org/abs/1608.06993) as convolutional feature extractor. Finally, a linear layer is applied to classify final flattened feature representation to predefined classes.
+>
 
+**SAN**  [[code]]() [[pdf]](https://arxiv.org/pdf/1804.07888.pdf) 
+
+![status](/Users/eshion/Documents/Project/NTMC-Community/awaresome-neural-models-for-semantic-match/artworks/progress.svg)
+
+Stochastic Answer Networks for Natural Language Inference. *ACL 2018*.
+
+> SAN refers to Stochastic Answer Network which consists of four stacked layers, namely *Lexicon Encoding Layer*, *Contextual Encoding Layer*, *Memory Layer*, and *Answer Module*. 
 
 ### Healthcheck
 

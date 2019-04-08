@@ -330,7 +330,7 @@ Natural Lanuguage Inference Over Interaction Space. *ICLR 2018*.
 
 **SAN**  [[code]]() [[pdf]](https://arxiv.org/pdf/1804.07888.pdf) 
 
-![status](/Users/eshion/Documents/Project/NTMC-Community/awaresome-neural-models-for-semantic-match/artworks/progress.svg)
+![status](artworks/progress.svg)
 
 Stochastic Answer Networks for Natural Language Inference. *ACL 2018*.
 

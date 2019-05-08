@@ -1,8 +1,8 @@
 <div align="center">
-<img width="300" src="artworks/awaresome.svg" alt="Awesome">
+<img width="300" src="artworks/awesome.svg" alt="Awesome">
 <br>
 <br>
-<p><b>Awaresome Neural Models for Semantic Match</b></p>
+<p><b>Awesome Neural Models for Semantic Match</b></p>
 </div>
 <br>
 <p align="center">
@@ -301,6 +301,14 @@ Representative neural matching models for NLI include:
 Learning Natural Language Inference with LSTM. *NAACL 2016*.
 
 > Match-LSTM uses an LSTM to perform word-by-word matching of the hypothesis with the premise. The LSTM sequentially processes the hypothesis, and at each position, it tries to match the current word in the hypothesis with an attention-weighted representation of the premise.
+
+**Decomposable** [[code]](https://github.com/HsiaoYetGun/Decomposable-Attention) [[pdf]](https://arxiv.org/abs/1606.01933) 
+
+![status](artworks/not-in-plan.svg)
+
+A Decomposable Attention Model for Natural Language Inference. *EMNLP 2016.Google*
+
+> Decomposable propose a simple neural architecture for natural language inference. It uses attention to decompose the problem into subproblems that can be solved separately, thus making it trivially parallelizable. 
 
 **BiMPM** [[code]](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/contrib/models/bimpm.py) [[pdf]](https://arxiv.org/pdf/1702.03814.pdf) 
 

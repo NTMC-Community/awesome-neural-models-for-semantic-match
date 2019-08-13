@@ -278,6 +278,13 @@ MIX: Multi-Channel Information Crossing for Text Matching. *KDD 2018*.
 
 > MIX is a multi-channel convolutional neural network model for text matching in a production environment, with additional attention mechanisms on sentences and semantic features. MIX compares text snippets at varied granularities to form a serious of multi-channel similarity matrices, which are then crossed with another set of carefully designed attention matrices to expose the rich structure of sentences to deep neural network.
 
+**HAR** [[code]]() [[pdf]](http://dmkd.cs.vt.edu/papers/WWW19.pdf) 
+
+![status](artworks/not-in-plan.svg)
+
+HAR: A Hierarchical Attention Retrieval Model for Healthcare Question Answering. *WWW 2019*.
+
+> HAR uses a deep attention mechanism at word, sentence, and document levels, for efficient retrieval for both factoid and non-factoid queries, on documents of varied lengths. Specifically, the word-level cross-attention allows the model to identify words that might be most relevant for a query, and the hierarchical attention at sentence and document levels allows it to do effective retrieval on both long and short documents.
 
 ### Natural Language Inference
 
@@ -343,6 +350,22 @@ Natural Lanuguage Inference Over Interaction Space. *ICLR 2018*.
 Stochastic Answer Networks for Natural Language Inference. *ACL 2018*.
 
 > SAN refers to Stochastic Answer Network which consists of four stacked layers, namely *Lexicon Encoding Layer*, *Contextual Encoding Layer*, *Memory Layer*, and *Answer Module*. 
+
+**HCRN**  [[code]]() [[pdf]](https://www.ijcai.org/proceedings/2018/0615.pdf) 
+
+![status](artworks/not-in-plan.svg)
+
+Hermitian Co-Attention Networks for Text Matching in Asymmetrical Domains. *IJCAI 2018*.
+
+> HCRN refers to Hermitian Co-Attention Recurrent Network, namely *Input Encoding*, *Hermitian Co-Attention*, *Hermitian Intra-Attention*, and *Aggregation and Prediction*. 
+
+**AF-DMN**  [[code]]() [[pdf]](https://www.ijcai.org/proceedings/2018/0561.pdf) 
+
+![status](artworks/not-in-plan.svg)
+
+Attention-Fused Deep Matching Network for Natural Language Inference. *IJCAI 2018*.
+
+> AF-DMN takes two sentences as input and iteratively learns the attention-aware representations for each side by multi-level interactions. Moreover, AF-DMN has a self- attention mechanism to fully exploit local context information within each sentence.
 
 ### Healthcheck
 

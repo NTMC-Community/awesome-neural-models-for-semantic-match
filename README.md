@@ -22,9 +22,10 @@ Where **s** and **t** are source text input and target text input, respectively.
 |                                          **Tasks**                                           | **Source Text** |     **Target Text**      |
 | :------------------------------------------------------------------------------------------: | :-------------: | :----------------------: |
 | [Ad-hoc Information Retrieval](Ad-hoc Information Retrieval/Ad-hoc Information Retrieval.md) |      query      | document (title/content) |
-|     [Community Question Answering](Community Question Answering/Community Question Answering.md)      |    question     |     question/answer      |
+| [Community Question Answering](Community Question Answering/Community Question Answering.md) |    question     |     question/answer      |
 |     [Paraphrase Indentification](Paraphrase Identification/Paraphrase Identification.md)     |     string1     |         string2          |
 |    [Natural Language Inference](Natural Language Inference/Natural Language Inference.md)    |     premise     |        hypothesis        |
+|                [Response Retrieval](Response Retrieval/Response Retrieval.md)                |    response     |         response         |
 
 ### Healthcheck
 

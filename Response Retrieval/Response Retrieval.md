@@ -2,7 +2,7 @@
 Response retrieval/selection aims to rank/select a proper response from a dialog repository.
 Automatic conversation (AC) aims to create an automatic human-computer dialog process for the purpose of question answering, task completion, and social chat (i.e., chit-chat). In general, AC could be formulated either as an IR problem that aims to rank/select a proper response from a dialog repository or a generation problem that aims to generate an appropriate response with respect to the input utterance. Here, we refer response retrieval as the IR-based way to do AC.
 Example:
-![example](Response Retrieval/example.png)
+![example](https://github.com/NTMC-Community/awesome-neural-models-for-semantic-match/blob/gh-pages/Response%20Retrieval/example.png?raw=true)
 
 
 Dataset

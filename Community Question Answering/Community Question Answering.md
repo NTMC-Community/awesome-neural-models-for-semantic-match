@@ -2,100 +2,103 @@
 
 **Community Question Answer** is to automatically search for relevant answers among many responses provided for a given question (Answer Selection), and search for relevant questions to reuse their existing answers (Question Retrieval).
 
-### TREC QA
 
-[**TRECQA**](https://trec.nist.gov/data/qa.html) dataset is created by [Wang et. al.](https://www.aclweb.org/anthology/D07-1003) from TREC QA track 8-13 data, with candidate answers automatically selected from each question’s document pool using a combination of overlapping non-stop word counts and pattern matching. This data set is one of the most widely used benchmarks for [answer sentence selection](https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)).
 
-**Raw Version of TREC QA:**
+## Classic Datasets
 
-| Model                                                        |    MAP    |    MRR    | Paper                                                        |
-| :----------------------------------------------------------- | :-------: | :-------: | :----------------------------------------------------------- |
-| Punyakanok (2004)                                            |   0.419   |   0.494   | [Mapping dependencies trees: An application to question answering](http://cogcomp.cs.illinois.edu/papers/PunyakanokRoYi04a.pdf) |
-| Cui (2005)                                                   |   0.427   |   0.526   | [Question answering passage retrieval using dependency relations](http://ws.csie.ncku.edu.tw/login/upload/2005/paper/Question answering Question answering passage retrieval using dependency relations.pdf) |
-| Wang (2007)                                                  |   0.603   |   0.685   | [What is the Jeopardy Model? A Quasi-Synchronous Grammar for QA](http://www.aclweb.org/anthology/D/D07/D07-1003.pdf) |
-| H&S (2010)                                                   |   0.609   |   0.692   | [Tree Edit Models for Recognizing Textual Entailments, Paraphrases, and Answers to Questions](http://www.aclweb.org/anthology/N10-1145) |
-| W&M (2010)                                                   |   0.595   |   0.695   | [Probabilistic Tree-Edit Models with Structured Latent Variables for Textual Entailment and Question Answering](http://aclweb.org/anthology//C/C10/C10-1131.pdf) |
-| Yao (2013)                                                   |   0.631   |   0.748   | [Answer Extraction as Sequence Tagging with Tree Edit Distance](http://www.aclweb.org/anthology/N13-1106.pdf) |
-| S&M (2013)                                                   |   0.678   |   0.736   | [Automatic Feature Engineering for Answer Selection and Extraction](http://www.aclweb.org/anthology/D13-1044.pdf)[](http://www.aclweb.org/anthology/N13-1106.pdf) |
-| Shnarch (2013) - Backward                                    |   0.686   |   0.754   | Probabilistic Models for Lexical Inference                   |
-| Yih (2013) - LCLR                                            |   0.709   |   0.770   | [Question Answering Using Enhanced Lexical Semantic Models](http://research.microsoft.com/pubs/192357/QA-SentSel-Updated-PostACL.pdf) |
-| Yu (2014) - TRAIN-ALL bigram+count                           |   0.711   |   0.785   | [Deep Learning for Answer Sentence Selection](http://arxiv.org/pdf/1412.1632v1.pdf) |
-| W&N (2015) - Three-Layer BLSTM+BM25                          |   0.713   |   0.791   | [A Long Short-Term Memory Model for Answer Sentence Selection in Question Answering](http://www.aclweb.org/anthology/P15-2116) |
-| Feng (2015) - Architecture-II                                |   0.711   |   0.800   | [Applying deep learning to answer selection: A study and an open task](http://arxiv.org/abs/1508.01585) |
-| S&M (2015)                                                   |   0.746   |   0.808   | [Learning to Rank Short Text Pairs with Convolutional Deep Neural Networks](http://disi.unitn.it/~severyn/papers/sigir-2015-long.pdf) |
-| Yang (2016) - Attention-Based Neural Matching Model          |   0.750   |   0.811   | [aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model](http://maroo.cs.umass.edu/pub/web/getpdf.php?id=1240) |
-| Tay (2017) - Holographic Dual LSTM Architecture              |   0.750   |   0.815   | [Learning to Rank Question Answer Pairs with Holographic Dual LSTM Architecture](https://arxiv.org/abs/1707.06372) |
-| H&L (2016) - Pairwise Word Interaction Modelling             |   0.758   |   0.822   | [Pairwise Word Interaction Modeling with Deep Neural Networks for Semantic Similarity Measurement](https://cs.uwaterloo.ca/~jimmylin/publications/He_etal_NAACL-HTL2016.pdf) |
-| H&L (2015) - Multi-Perspective CNN                           |   0.762   |   0.830   | [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](http://aclweb.org/anthology/D/D15/D15-1181.pdf) |
-| Tay (2017) - HyperQA (Hyperbolic Embeddings)                 |   0.770   |   0.825   | [Enabling Efficient Question Answer Retrieval via Hyperbolic Neural Networks](https://arxiv.org/pdf/1707.07847) |
-| Rao (2016) - PairwiseRank + Multi-Perspective CNN            |   0.780   |   0.834   | [Noise-Contrastive Estimation for Answer Selection with Deep Neural Networks](https://dl.acm.org/authorize.cfm?key=N27026) |
-| Rao (2019) - Hybrid Co-Attention Network (HCAN)              |   0.774   |   0.843   | [Bridging the Gap between Relevance Matching and Semantic Matching for Short Text Similarity Modeling](https://jinfengr.github.io/publications/Rao_etal_EMNLP2019.pdf) |
-| Tayyar Madabushi (2018) - Question Classification + PairwiseRank + Multi-Perspective CNN |   0.836   |   0.863   | [Integrating Question Classification and Deep Learning for improved Answer Selection](https://aclanthology.coli.uni-saarland.de/papers/C18-1278/c18-1278) |
-| Kamath (2019) - Question Classification + RNN + Pre-Attention |   0.852   |   0.891   | [Predicting and Integrating Expected Answer Types into a Simple Recurrent Neural Network Model for Answer Sentence Selection](https://hal.archives-ouvertes.fr/hal-02104488/) |
-| Laskar et al. (2020) - CETE (RoBERTa-Large)                  | **0.950** | **0.980** | [Contextualized Embeddings based Transformer Encoder for Sentence Similarity Modeling in Answer Selection Task](http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.676.pdf) |
+| Dataset                                                      | Domain      | #Question | #Answer |
+| ------------------------------------------------------------ | ----------- | --------- | ------- |
+| [**TRECQA**](https://trec.nist.gov/data/qa.html)             | Open-domain | 1,229     | 5,3417  |
+| [**WikiQA**](https://www.microsoft.com/en-us/download/details.aspx?id=52419) | Open-domain | 3,047     | 29,258  |
+| [**InsuranceQA**](https://github.com/shuzi/insuranceQA)      | Insurance   | 12,889    | 21,325  |
+| [**FiQA**](https://sites.google.com/view/fiqa)               | Financial   | 6,648     | 57,641  |
+| Yahoo! Answers                                               | Open-domain | 50,112    | 253,440 |
+| SemEval-2015 Task 3                                          | Open-domain | 2,600     | 16,541  |
+| SemEval-2016 Task 3                                          | Open-domain | 4,879     | 36,198  |
+| SemEval-2017 Task 3                                          | Open-domain | 4,879     | 36,198  |
 
-**Clean Version of TREC QA:**
+- [**TRECQA**](https://trec.nist.gov/data/qa.html) dataset is created by [Wang et. al.](https://www.aclweb.org/anthology/D07-1003) from TREC QA track 8-13 data, with candidate answers automatically selected from each question’s document pool using a combination of overlapping non-stop word counts and pattern matching. This data set is one of the most widely used benchmarks for [answer sentence selection](https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)).
 
-| Model                                                        |    MAP    |    MRR    | Paper                                                        |
-| :----------------------------------------------------------- | :-------: | :-------: | :----------------------------------------------------------- |
-| W&I (2015)                                                   |   0.746   |   0.820   | [FAQ-based Question Answering via Word Alignment](http://arxiv.org/abs/1507.02628) |
-| Tan (2015) - QA-LSTM/CNN+attention                           |   0.728   |   0.832   | [LSTM-Based Deep Learning Models for Nonfactoid Answer Selection](http://arxiv.org/abs/1511.04108) |
-| dos Santos (2016) - Attentive Pooling CNN                    |   0.753   |   0.851   | [[Attentive Pooling Networks](http://arxiv.org/abs/1602.03609)](http://www.aclweb.org/anthology/P15-2116) |
-| Wang et al. (2016) - L.D.C Model                             |   0.771   |   0.845   | [Sentence Similarity Learning by Lexical Decomposition and Composition](http://arxiv.org/pdf/1602.07019v1.pdf) |
-| H&L (2015) - Multi-Perspective CNN                           |   0.777   |   0.836   | [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks](http://aclweb.org/anthology/D/D15/D15-1181.pdf) |
-| Tay (2017) - HyperQA (Hyperbolic Embeddings)                 |   0.784   |   0.865   | [Enabling Efficient Question Answer Retrieval via Hyperbolic Neural Networks](https://arxiv.org/pdf/1707.07847) |
-| Rao (2016) - PairwiseRank + Multi-Perspective CNN            |   0.801   |   0.877   | [Noise-Contrastive Estimation for Answer Selection with Deep Neural Networks](https://dl.acm.org/authorize.cfm?key=N27026) |
-| Wang et al. (2017) - BiMPM                                   |   0.802   |   0.875   | [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/pdf/1702.03814.pdf) |
-| Bian et al. (2017) - Compare-Aggregate                       |   0.821   |   0.899   | [A Compare-Aggregate Model with Dynamic-Clip Attention for Answer Selection](https://dl.acm.org/citation.cfm?id=3133089&CFID=791659397&CFTOKEN=43388059) |
-| Shen et al. (2017) - IWAN                                    |   0.822   |   0.889   | [Inter-Weighted Alignment Network for Sentence Pair Modeling](https://aclanthology.info/pdf/D/D17/D17-1122.pdf) |
-| Tran et al. (2018) - IWAN + sCARNN                           |   0.829   |   0.875   | [The Context-dependent Additive Recurrent Neural Net](http://www.aclweb.org/anthology/N18-1115) |
-| Tay et al. (2018) - Multi-Cast Attention Networks (MCAN)     |   0.838   |   0.904   | [Multi-Cast Attention Networks](https://arxiv.org/abs/1806.00778) |
-| Tayyar Madabushi (2018) - Question Classification + PairwiseRank + Multi-Perspective CNN |   0.865   |   0.904   | [Integrating Question Classification and Deep Learning for improved Answer Selection](https://aclanthology.coli.uni-saarland.de/papers/C18-1278/c18-1278) |
-| Yoon et al. (2019) - Compare-Aggregate + LanguageModel + LatentClustering |   0.868   |   0.928   | [[A Compare-Aggregate Model with Latent Clustering for Answer Selection](https://arxiv.org/abs/1905.12897)](https://hal.archives-ouvertes.fr/hal-02104488/) |
-| Lai et al. (2019) - BERT + GSAMN + Transfer Learning         |   0.914   |   0.957   | [A Gated Self-attention Memory Network for Answer Selection](https://arxiv.org/pdf/1909.09696.pdf) |
-| Garg et al. (2019) - TANDA-RoBERTa (ASNQ, TREC-QA)           | **0.943** |   0.974   | [TANDA: Transfer and Adapt Pre-Trained Transformer Models for Answer Sentence Selection](https://arxiv.org/abs/1911.04118) |
-| Laskar et al. (2020) - CETE (RoBERTa-Large)                  |   0.936   | **0.978** | [Contextualized Embeddings based Transformer Encoder for Sentence Similarity Modeling in Answer Selection Task](http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.676.pdf) |
+- [**WikiQA**](https://www.microsoft.com/en-us/download/details.aspx?id=52419) is a publicly available set of question and sentence pairs, collected and annotated for research on open-domain question answering by Microsoft Research.
+
+- [**InsuranceQA**](https://github.com/shuzi/insuranceQA) is a non-factoid QA dataset from the insurance domain. Question may have multiple correct answers and normally the questions are much shorter than the answers. The average length of questions and answers in tokens are 7 and 95, respectively. For each question in the development and test sets, there is a set of 500 candidate answers.
+
+- [**FiQA**](https://sites.google.com/view/fiqa) is a non-factoid QA dataset from the financial domain which has been recently released for WWW 2018 Challenges. The dataset is built by crawling Stackexchange, Reddit and StockTwits in which part of the questions are opinionated, targeting mined opinions and their respective entities, aspects, sentiment polarity and opinion holder.
+
+- [**Yahoo! Answers**](https://webscope.sandbox.yahoo.com) is a web site where people post questions and answers, all of which are public to any web user willing to browse or download them. The data we have collected is the Yahoo! Answers corpus as of 10/25/2007. This is a benchmark dataset for communitybased question answering that was collected from Yahoo Answers. In this dataset, the answer lengths are relatively longer than TrecQA and WikiQA.
+
+- [**SemEval-2015 Task 3**](http://alt.qcri.org/semeval2015/task3/) consists of two sub-tasks. In Subtask A, given a question (short title + extended description), and several community answers, classify each of the answer as definitely relevance (good), potentially useful (potential), or bad or irrelevant (bad, dialog, non-english other). In Subtask B, given a YES/NO question (short title + extended description), and a list of community answers, decide whether the global answer to the question should be yes, no, or unsure.
+
+- [**SemEval-2016 Task 3**](http://alt.qcri.org/semeval2016/task3/) consists two sub-tasks, namely *Question-Comment Similarity* and *Question-Question Similarity*. In the *Question-Comment Similarity* task, given a question from a question-comment thread, rank the comments according to their relevance with respect to the question. In *Question-Question Similarity* task, given the new question, rerank all similar questions retrieved by a search engine.
+
+- [**SemEval-2017 Task 3**](http://alt.qcri.org/semeval2017/task3/) contains two sub-tasks, namely *Question Similarity* and *Relevance Classification*. Given the new question and a set of related questions from the collection, the *Question Similarity* task is to rank the similar questions according to their similarity to the original question. While the *Relevance Classification* is to rank the answer posts according to their relevance with respect to the question based on a question-answer thread.
+
+  
+
+## Performance
+
+###  TREC QA (Raw Version)
+
+| Model                                                        | Code                                                         |    MAP    |    MRR    | Paper                                                        |
+| :----------------------------------------------------------- | ------------------------------------------------------------ | :-------: | :-------: | :----------------------------------------------------------- |
+| Punyakanok (2004)                                            |                                                              |   0.419   |   0.494   | [Mapping dependencies trees: An application to question answering, ISAIM 2004](http://cogcomp.cs.illinois.edu/papers/PunyakanokRoYi04a.pdf) |
+| Cui (2005)                                                   |                                                              |   0.427   |   0.526   | [Question answering passage retrieval using dependency relations, SIGIR 2005](http://ws.csie.ncku.edu.tw/login/upload/2005/paper/Question answering Question answering passage retrieval using dependency relations.pdf) |
+| Wang (2007)                                                  |                                                              |   0.603   |   0.685   | [What is the Jeopardy Model? A Quasi-Synchronous Grammar for QA, EMNLP 2007](http://www.aclweb.org/anthology/D/D07/D07-1003.pdf) |
+| H&S (2010)                                                   |                                                              |   0.609   |   0.692   | [Tree Edit Models for Recognizing Textual Entailments, Paraphrases, and Answers to Questions, NAACL 2010](http://www.aclweb.org/anthology/N10-1145) |
+| W&M (2010)                                                   |                                                              |   0.595   |   0.695   | [Probabilistic Tree-Edit Models with Structured Latent Variables for Textual Entailment and Question Answering, COLING 2020](http://aclweb.org/anthology//C/C10/C10-1131.pdf) |
+| Yao (2013)                                                   |                                                              |   0.631   |   0.748   | [Answer Extraction as Sequence Tagging with Tree Edit Distance, NAACL 2013](http://www.aclweb.org/anthology/N13-1106.pdf) |
+| S&M (2013)                                                   |                                                              |   0.678   |   0.736   | [Automatic Feature Engineering for Answer Selection and Extraction, EMNLP 2013](http://www.aclweb.org/anthology/D13-1044.pdf) |
+| Backward (Shnarch et al., 2013)                              |                                                              |   0.686   |   0.754   | [Probabilistic Models for Lexical Inference, Ph.D. thesis 2013](http://u.cs.biu.ac.il/~nlp/wp-content/uploads/eyal-thesis-library-ready.pdf) |
+| LCLR (Yih et al., 2013)                                      |                                                              |   0.709   |   0.770   | [Question Answering Using Enhanced Lexical Semantic Models, ACL 2013](http://research.microsoft.com/pubs/192357/QA-SentSel-Updated-PostACL.pdf) |
+| TRAIN-ALL bigram+count (Yu et al., 2014)                     |                                                              |   0.711   |   0.785   | [Deep Learning for Answer Sentence Selection, NIPS 2014](http://arxiv.org/pdf/1412.1632v1.pdf) |
+| Three-Layer BLSTM+BM25 (W&N et al., 2015)                    |                                                              |   0.713   |   0.791   | [A Long Short-Term Memory Model for Answer Sentence Selection in Question Answering, ACL 2015](http://www.aclweb.org/anthology/P15-2116) |
+| Architecture-II (Feng et al., 2015)                          |                                                              |   0.711   |   0.800   | [Applying deep learning to answer selection: A study and an open task, ASRU 2015](http://arxiv.org/abs/1508.01585) |
+| PairCNN (Severyn et al., 2015)                               | [Official](https://github.com/zhangzibin/PairCNN-Ranking)    |   0.746   |   0.808   | [Learning to Rank Short Text Pairs with Convolutional Deep Neural Networks, SIGIR 2015](http://disi.unitn.eu/moschitti/since2013/2015_SIGIR_Severyn_LearningRankShort.pdf) |
+| aNMM (Yang et al., 2016)                                     | [Official](https://github.com/yangliuy/aNMM-CIKM16) or [MatchZoo](https://github.com/NTMC-Community/MatchZoo-py/tree/master/matchzoo/models/anmm.py) |   0.750   |   0.811   | [aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model, CIKM 2016](http://maroo.cs.umass.edu/pub/web/getpdf.php?id=1240) |
+| Holographic Dual LSTM Architecture (Tay et al., 2017)        | [Official](https://github.com/vanzytay/YahooQA_Splits)       |   0.750   |   0.815   | [Learning to Rank Question Answer Pairs with Holographic Dual LSTM Architecture, SIGIR 2017](https://arxiv.org/abs/1707.06372) |
+| Pairwise Word Interaction Modelling (Hua et al. 2016)        | [Official](https://github.com/castorini/VDPWI-NN-Torch)      |   0.758   |   0.822   | [Pairwise Word Interaction Modeling with Deep Neural Networks for Semantic Similarity Measurement, NAACL 2016](https://cs.uwaterloo.ca/~jimmylin/publications/He_etal_NAACL-HTL2016.pdf) |
+| Multi-Perspective CNN (Hua et al. 2015)                      | [Official](https://github.com/castorini/MP-CNN-Torch)        |   0.762   |   0.830   | [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks, EMNLP 2015](http://aclweb.org/anthology/D/D15/D15-1181.pdf) |
+| HyperQA (Tay et al., 2017)                                   | [Official](https://github.com/vanzytay/WSDM2018_HyperQA)     |   0.770   |   0.825   | [Enabling Efficient Question Answer Retrieval via Hyperbolic Neural Networks, WSDM 2018](https://arxiv.org/pdf/1707.07847) |
+| Multi-Perspective CNN (Rao et al., 2016)                     | [Official](https://github.com/castorini/NCE-CNN-Torch)       |   0.780   |   0.834   | [Noise-Contrastive Estimation for Answer Selection with Deep Neural Networks, CIKM 2016](https://dl.acm.org/authorize.cfm?key=N27026) |
+| HCAN (Rao et al., 2019)                                      |                                                              |   0.774   |   0.843   | [Bridging the Gap between Relevance Matching and Semantic Matching for Short Text Similarity Modeling, EMNLP 2019](https://jinfengr.github.io/publications/Rao_etal_EMNLP2019.pdf) |
+| Multi-Perspective CNN (Tayyar Madabushi et al., Tayyar Madabushi) |                                                              |   0.836   |   0.863   | [Integrating Question Classification and Deep Learning for improved Answer Selection, COLING 2018](https://aclanthology.coli.uni-saarland.de/papers/C18-1278/c18-1278) |
+| Question Classification + RNN + Pre-Attention (Kamath et al., 2019) |                                                              |   0.852   |   0.891   | [Predicting and Integrating Expected Answer Types into a Simple Recurrent Neural Network Model for Answer Sentence Selection, CICLING 2019](https://hal.archives-ouvertes.fr/hal-02104488/) |
+| Laskar et al. (2020) - CETE (RoBERTa-Large)                  |                                                              | **0.950** | **0.980** | [Contextualized Embeddings based Transformer Encoder for Sentence Similarity Modeling in Answer Selection Task LREC 2020](http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.676.pdf) |
+
+### TREC QA (Clean Version)
+
+| Model                                                        |                                                              |    MAP    |    MRR    | Paper                                                        |
+| :----------------------------------------------------------- | ------------------------------------------------------------ | :-------: | :-------: | :----------------------------------------------------------- |
+| W&I (2015)                                                   |                                                              |   0.746   |   0.820   | [FAQ-based Question Answering via Word Alignment, arXiv 2015](http://arxiv.org/abs/1507.02628) |
+| QA-LSTM/CNN+attention (Tan et al., 2015)                     | [Official](https://github.com/Alan-Lee123/answer-selection)  |   0.728   |   0.832   | [LSTM-Based Deep Learning Models for Nonfactoid Answer Selection, arXiv 2015](http://arxiv.org/abs/1511.04108) |
+| Attentive Pooling CNN (dos Santos et al. 2016)               |                                                              |   0.753   |   0.851   | [Attentive Pooling Networks, arXiv 2016](http://arxiv.org/abs/1602.03609) |
+| L.D.C Model (Wang et al., 2016)                              |                                                              |   0.771   |   0.845   | [Sentence Similarity Learning by Lexical Decomposition and Composition, COLING 2016](http://arxiv.org/pdf/1602.07019v1.pdf) |
+| Multi-Perspective CNN (Hua et al., 2015)                     | [Official](https://github.com/castorini/MP-CNN-Torch)        |   0.777   |   0.836   | [Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks, EMNLP 2015](http://aclweb.org/anthology/D/D15/D15-1181.pdf) |
+| HyperQA (Tay et al., 2017)                                   | [Official](https://github.com/vanzytay/WSDM2018_HyperQA)     |   0.784   |   0.865   | [Enabling Efficient Question Answer Retrieval via Hyperbolic Neural Networks, WSDM 2018](https://arxiv.org/pdf/1707.07847) |
+| Multi-Perspective CNN (Rao et al., 2016)                     | [Official](https://github.com/castorini/NCE-CNN-Torch)       |   0.801   |   0.877   | [Noise-Contrastive Estimation for Answer Selection with Deep Neural Networks, CIKM 2016](https://dl.acm.org/authorize.cfm?key=N27026) |
+| BiMPM (Wang et al., 2017)                                    | [Official](https://github.com/zhiguowang/BiMPM) or [MatchZoo](https://github.com/NTMC-Community/MatchZoo-py/blob/dev/matchzoo/models/bimpm.py) |   0.802   |   0.875   | [Bilateral Multi-Perspective Matching for Natural Language Sentences, arXiv 2017](https://arxiv.org/pdf/1702.03814.pdf) |
+| Compare-Aggregate (Bian et al., 2017)                        | [Official](https://github.com/wjbianjason/Dynamic-Clip-Attention) or [MatchZoo](https://github.com/NTMC-Community/MatchZoo-py/blob/dev/matchzoo/models/dynamic_clip.py) |   0.821   |   0.899   | [A Compare-Aggregate Model with Dynamic-Clip Attention for Answer Selection, CIKM 2017](https://dl.acm.org/citation.cfm?id=3133089&CFID=791659397&CFTOKEN=43388059) |
+| IWAN (Shen et al., 2017)                                     |                                                              |   0.822   |   0.889   | [Inter-Weighted Alignment Network for Sentence Pair Modeling, EMNLP 2017](https://aclanthology.info/pdf/D/D17/D17-1122.pdf) |
+| IWAN + sCARNN (Tran et al., 2018)                            |                                                              |   0.829   |   0.875   | [The Context-dependent Additive Recurrent Neural Net, NAACL 2018](http://www.aclweb.org/anthology/N18-1115) |
+| MCAN (Tay et al., 2018)                                      |                                                              |   0.838   |   0.904   | [Multi-Cast Attention Networks, KDD 2018](https://arxiv.org/abs/1806.00778) |
+| Multi-Perspective CNN (Tayyar Madabushi et al., Tayyar Madabushi) |                                                              |   0.865   |   0.904   | [Integrating Question Classification and Deep Learning for improved Answer Selection, COLING 2018](https://aclanthology.coli.uni-saarland.de/papers/C18-1278/c18-1278) |
+| Compare-Aggregate + LanguageModel + LatentClustering (Yoon et al.， 2019) |                                                              |   0.868   |   0.928   | [A Compare-Aggregate Model with Latent Clustering for Answer Selection, CIKM 2019](https://arxiv.org/abs/1905.12897) |
+| GSAMN (Lai et al., 2019)                                     | [Official](https://github.com/laituan245/StackExchangeQA)    |   0.914   |   0.957   | [A Gated Self-attention Memory Network for Answer Selection, EMNLP 2019](https://arxiv.org/pdf/1909.09696.pdf) |
+| TANDA (Garg et al., 2019)                                    | [Official](TANDA: Transfer and Adapt Pre-Trained Transformer Models for Answer Sentence Selection) | **0.943** |   0.974   | [TANDA: Transfer and Adapt Pre-Trained Transformer Models for Answer Sentence Selection, AAAI 2020](https://arxiv.org/abs/1911.04118) |
+| CETE (Laskar et al., 2020)                                   |                                                              |   0.936   | **0.978** | [Contextualized Embeddings based Transformer Encoder for Sentence Similarity Modeling in Answer Selection Task, LREC 2020](http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.676.pdf) |
 
 ### WikiQA
 
-[**WikiQA**](https://www.microsoft.com/en-us/download/details.aspx?id=52419) is a publicly available set of question and sentence pairs, collected and annotated for research on open-domain question answering by Microsoft Research.
-
-| Model                                               | MAP    | MRR    | Paper                                                        |
-| --------------------------------------------------- | ------ | ------ | ------------------------------------------------------------ |
-| ABCNN (Yin et al., 2016)                            | 0.6921 | 0.7108 | [ABCNN: Attention-based convolutional neural network for modeling sentence pairs](https://doi.org/10.1162/tacl_a_00097) |
-| HyperQA (Tay et al., 2017)                          | 0.705  | 0.720  | [Enabling Efficient Question Answer Retrieval via Hyperbolic Neural Networks](https://arxiv.org/pdf/1707.07847) |
-| KVMN (Miller et al., 2016)                          | 0.7069 | 0.7265 | [Key-value memory networks for directly reading documents](https://doi.org/10.18653/v1/D16-1147) |
-| BiMPM (Wang et al., 2017)                           | 0.718  | 0.731  | [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/pdf/1702.03814.pdf) |
-| IWAN (Shen et al., 2017)                            | 0.733  | 0.750  | [Inter-Weighted Alignment Network for Sentence Pair Modeling](https://aclanthology.info/pdf/D/D17/D17-1122.pdf) |
-| CA(Wang and Jiang, 2017)                            | 0.7433 | 0.7545 | [A compare aggregate model for matching text sequences](https://arxiv.org/abs/1611.01747) |
-| HCRN (Tay et al., 2018c)                            | 0.7430 | 0.7560 | [Hermitian co-attention networks for text matching in asymmetrical domains](https://www.ijcai.org/proceedings/2018/615) |
-| Compare-Aggregate (Bian et al., 2017)               | 0.748  | 0.758  | [A Compare-Aggregate Model with Dynamic-Clip Attention for Answer Selection](https://dl.acm.org/citation.cfm?id=3133089&CFID=791659397&CFTOKEN=43388059) |
-| RE2 (Yang et al., 2019)                             | 0.7452 | 0.7618 | [Simple and Effective Text Matching with Richer Alignment Features](https://www.aclweb.org/anthology/P19-1465.pdf) |
-| BERT + GSAMN + Transfer Learning (Lai et al., 2019) | 0.857  | 0.872  | [A Gated Self-attention Memory Network for Answer Selection](https://arxiv.org/pdf/1909.09696.pdf) |
-
-
-### SemEval-2015 Task 3
-
-[**SemEval-2015 Task 3**](http://alt.qcri.org/semeval2015/task3/) consists of two sub-tasks. In Subtask A, given a question (short title + extended description), and several community answers, classify each of the answer as definitely relevance (good), potentially useful (potential), or bad or irrelevant (bad, dialog, non-english other). In Subtask B, given a YES/NO question (short title + extended description), and a list of community answers, decide whether the global answer to the question should be yes, no, or unsure.
-
-### SemEval-2016 Task 3
-
-[**SemEval-2016 Task 3**](http://alt.qcri.org/semeval2016/task3/) consists two sub-tasks, namely *Question-Comment Similarity* and *Question-Question Similarity*. In the *Question-Comment Similarity* task, given a question from a question-comment thread, rank the comments according to their relevance with respect to the question. In *Question-Question Similarity* task, given the new question, rerank all similar questions retrieved by a search engine.
-
-### SemEval-2017 Task 3
-
-[**SemEval-2017 Task 3**](http://alt.qcri.org/semeval2017/task3/) contains two sub-tasks, namely *Question Similarity* and *Relevance Classification*. Given the new question and a set of related questions from the collection, the *Question Similarity* task is to rank the similar questions according to their similarity to the original question. While the *Relevance Classification* is to rank the answer posts according to their relevance with respect to the question based on a question-answer thread.
-
-### Yahoo! Answers
-
-Yahoo! Answers is a web site where people post questions and answers, all of which are public to any web user willing to browse or download them. The data we have collected is the Yahoo! Answers corpus as of 10/25/2007.
-
-This is a benchmark dataset for communitybased question answering that was collected from Yahoo Answers. In this dataset, the answer lengths are relatively longer than TrecQA and WikiQA.
-
-### FiQA
-
-Non-factoid QA dataset from the financial domain which has been recently released for WWW 2018 Challenges. The dataset is built by crawling Stackexchange, Reddit and StockTwits in which part of the questions are opinionated, targeting mined opinions and their respective entities, aspects, sentiment polarity and opinion holder.
-
-### InsuranceQA
-
-Non-factoid QA dataset from the insurance domain. Question may have multiple correct answers and normally the questions are much shorter than the answers. The average length of questions and answers in tokens are 7 and 95, respectively. For each question in the development and test sets, there is a set of 500 candidate answers.
+| Model                                    | Code                                                         | MAP       | MRR       | Paper                                                        |
+| ---------------------------------------- | ------------------------------------------------------------ | --------- | --------- | ------------------------------------------------------------ |
+| ABCNN (Yin et al., 2016)                 | [Official](https://github.com/galsang/ABCNN)                 | 0.6921    | 0.7108    | [ABCNN: Attention-based convolutional neural network for modeling sentence pairs, ACL 2016](https://doi.org/10.1162/tacl_a_00097) |
+| Multi-Perspective CNN (Rao et al., 2016) | [Official](https://github.com/castorini/NCE-CNN-Torch)       | 0.701     | 0.718     | [Noise-Contrastive Estimation for Answer Selection with Deep Neural Networks, CIKM 2016](https://dl.acm.org/authorize.cfm?key=N27026) |
+| HyperQA (Tay et al., 2017)               | [Official](https://github.com/vanzytay/WSDM2018_HyperQA)     | 0.705     | 0.720     | [Enabling Efficient Question Answer Retrieval via Hyperbolic Neural Networks, WSDM 2018](https://arxiv.org/pdf/1707.07847) |
+| KVMN (Miller et al., 2016)               | [Official](https://github.com/siyuanzhao/key-value-memory-networks) | 0.7069    | 0.7265    | [Key-Value Memory Networks for Directly Reading Documents, ACL 2016](https://doi.org/10.18653/v1/D16-1147) |
+| BiMPM (Wang et al., 2017)                | [Official](https://github.com/zhiguowang/BiMPM) or [MatchZoo](https://github.com/NTMC-Community/MatchZoo-py/blob/dev/matchzoo/models/bimpm.py) | 0.718     | 0.731     | [Bilateral Multi-Perspective Matching for Natural Language Sentences, IJCAI 2017](https://arxiv.org/pdf/1702.03814.pdf) |
+| IWAN (Shen et al., 2017)                 |                                                              | 0.733     | 0.750     | [Inter-Weighted Alignment Network for Sentence Pair Modeling, EMNLP 2017](https://aclanthology.info/pdf/D/D17/D17-1122.pdf) |
+| CA (Wang and Jiang, 2017)                | [Official](A compare aggregate model for matching text sequences) | 0.7433    | 0.7545    | [A Compare-Aggregate Model for Matching Text Sequences, ICLR 2017](https://arxiv.org/abs/1611.01747) |
+| HCRN (Tay et al., 2018c)                 | [MatchZoo](https://github.com/NTMC-Community/MatchZoo-py/blob/dev/matchzoo/models/hcrn.py) | 0.7430    | 0.7560    | [Hermitian co-attention networks for text matching in asymmetrical domains, IJCAI 2018](https://www.ijcai.org/proceedings/2018/615) |
+| Compare-Aggregate (Bian et al., 2017)    | [Official](https://github.com/wjbianjason/Dynamic-Clip-Attention) | 0.748     | 0.758     | [A Compare-Aggregate Model with Dynamic-Clip Attention for Answer Selection, CIKM 2017](https://dl.acm.org/citation.cfm?id=3133089&CFID=791659397&CFTOKEN=43388059) |
+| RE2 (Yang et al., 2019)                  | [Official](https://github.com/alibaba-edu/simple-effective-text-matching) or [MatchZoo](https://github.com/NTMC-Community/MatchZoo-py/blob/dev/matchzoo/models/re2.py) | 0.7452    | 0.7618    | [Simple and Effective Text Matching with Richer Alignment Features, ACL 2019](https://www.aclweb.org/anthology/P19-1465.pdf) |
+| GSAMN (Lai et al., 2019)                 | [Official](https://github.com/laituan245/StackExchangeQA)    | **0.857** | **0.872** | [A Gated Self-attention Memory Network for Answer Selection, EMNLP 2019](https://arxiv.org/pdf/1909.09696.pdf) |

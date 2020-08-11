@@ -2,8 +2,13 @@
 
 **Natural Language Inference** is the task of determining whether a "hypothesis" is true (entailment), false (contradiction), or undetermined (neutral) given a "premise".
 
-
 ## Classic Datasets
+
+| Dataset                                                      | # sentence pair |
+| ------------------------------------------- | ----- |
+| [**SNLI**](https://arxiv.org/abs/1508.05326)                 | 570K            |
+| [**MultiNLI**](https://arxiv.org/abs/1704.05426)             | 433K            |
+| [**SciTail**](http://ai2-website.s3.amazonaws.com/publications/scitail-aaai-2018_cameraready.pdf) | 27K             |
 
 - [**SNLI**](https://arxiv.org/abs/1508.05326) is the short of Stanford Natural Language Inference, which has 570k human annotated sentence pairs. Thre premise data is draw from the captions of the Flickr30k corpus, and the hypothesis data is manually composed.
 - [**MultiNLI**](https://arxiv.org/abs/1704.05426) is short of Multi-Genre NLI, which has 433k sentence pairs, whose collection process and task detail are modeled closely to SNLI. The premise data is collected from maximally broad range of genre of American English such as non-fiction genres (SLATE, OUP, GOVERNMENT, VERBATIM, TRAVEL), spoken genres (TELEPHONE, FACE-TO-FACE), less formal written genres (FICTION, LETTERS) and a specialized one for 9/11.

@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen

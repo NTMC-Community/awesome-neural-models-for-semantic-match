@@ -82,40 +82,41 @@ following,
 | DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch]        | \\                  | \\                  | \\                       | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017]    |
 | HiNT         | ![status not in plan]  [![status official]][official code HiNT]                    | \\                  | \\                  | \\                       | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018]                            |
 
-### Gov2
 
-| Model        | Code                                                                               | MAP          | P@20         | nDCG@20      | Paper                                                                                            |
-|:-------------|:-----------------------------------------------------------------------------------|:-------------|:-------------|:-------------|:-------------------------------------------------------------------------------------------------|
-| DSSM         | [![status MatchZoo]][matchzoo code DSSM]  [![status official]][official code DSSM] | [todo](todo) | [todo](todo) | [todo](todo) | [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data, CIKM 2013]     |
-| CDSSM        | [![status MatchZoo]][matchzoo code CDSSM]                                          | [todo](todo) | [todo](todo) | [todo](todo) | [Learning Semantic Representations Using Convolutional Neural Networks for Web Search, WWW 2014] |
-| ARC-I        | [![status MatchZoo]][matchzoo code ARC-I]                                          | [todo](todo) | [todo](todo) | [todo](todo) | [Convolutional Neural Network Architectures for Matching Natural Language Sentences, NIPS 2014]  |
-| ARC-II       | [![status MatchZoo]][matchzoo code ARC-II]                                         | [todo](todo) | [todo](todo) | [todo](todo) | [Convolutional Neural Network Architectures for Matching Natural Language Sentences, NIPS 2014]  |
-| DRMM         | [![status MatchZoo]][matchzoo code DRMM]  [![status official]][official code DRMM] | [todo](todo) | [todo](todo) | [todo](todo) | [A Deep Relevance Matching Model for Ad-hoc Retrieval, CIKM 2016]                                |
-| MatchPyramid | [![status MatchZoo]][matchzoo code MatchPyramid]                                   | [todo](todo) | [todo](todo) | [todo](todo) | [Text Matching as Image Recognition, AAAI 2016]                                                  |
-| KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | [todo](todo) | [todo](todo) | [todo](todo) | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017]                               |
-| CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                                      | [todo](todo) | [todo](todo) | [todo](todo) | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018]            |
-| Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | [todo](todo) | [todo](todo) | [todo](todo) | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
-| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR]                | [todo](todo) | [todo](todo) | [todo](todo) | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018]                      |
-| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch]        | [todo](todo) | [todo](todo) | [todo](todo) | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017]    |
-| HiNT         | ![status not in plan]  [![status official]][official code HiNT]                    | [todo](todo) | [todo](todo) | [todo](todo) | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018]                            |
+### MS MARCO Passage
+
+| Model        | Code                                                                               | MRR@10                      | Recall@10                   | nDCG@10                     | Paper                                                                                            |
+|:-------------|:-----------------------------------------------------------------------------------|:----------------------------|:----------------------------|:----------------------------|:-------------------------------------------------------------------------------------------------|
+| DSSM         | [![status MatchZoo]][matchzoo code DSSM]  [![status official]][official code DSSM] | \\                          | \\                          | \\                          | [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data, CIKM 2013]     |
+| CDSSM        | [![status MatchZoo]][matchzoo code CDSSM]                                          | \\                          | \\                          | \\                          | [Learning Semantic Representations Using Convolutional Neural Networks for Web Search, WWW 2014] |
+| ARC-I        | [![status MatchZoo]][matchzoo code ARC-I]                                          | \\                          | \\                          | \\                          | [Convolutional Neural Network Architectures for Matching Natural Language Sentences, NIPS 2014]  |
+| ARC-II       | [![status MatchZoo]][matchzoo code ARC-II]                                         | \\                          | \\                          | \\                          | [Convolutional Neural Network Architectures for Matching Natural Language Sentences, NIPS 2014]  |
+| DRMM         | [![status MatchZoo]][matchzoo code DRMM]  [![status official]][official code DRMM] | \\                          | \\                          | \\                          | [A Deep Relevance Matching Model for Ad-hoc Retrieval, CIKM 2016]                                |
+| MatchPyramid | [![status MatchZoo]][matchzoo code MatchPyramid]                                   | [0.249][paper MSMARCO eval] | [0.476][paper MSMARCO eval] | [0.301][paper MSMARCO eval] | [Text Matching as Image Recognition, AAAI 2016]                                                  |
+| KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | [0.235][paper MSMARCO eval] | [0.465][paper MSMARCO eval] | [0.288][paper MSMARCO eval] | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017]                               |
+| CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                                      | [0.277][paper MSMARCO eval] | [0.519][paper MSMARCO eval] | [0.332][paper MSMARCO eval] | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018]            |
+| Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | [0.248][paper MSMARCO eval] | [0.468][paper MSMARCO eval] | [0.299][paper MSMARCO eval] | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
+| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR]                | [0.273][paper MSMARCO eval] | [0.514][paper MSMARCO eval] | [0.328][paper MSMARCO eval] | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018]                      |
+| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch]        | \\                          | \\                          | \\                          | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017]    |
+| HiNT         | ![status not in plan]  [![status official]][official code HiNT]                    | \\                          | \\                          | \\                          | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018]                            |
 
 
-### MS MARCO
+### MS MARCO Document
 
-| Model        | Code                                                                               | MAP          | P@20         | nDCG@20      | Paper                                                                                            |
-|:-------------|:-----------------------------------------------------------------------------------|:-------------|:-------------|:-------------|:-------------------------------------------------------------------------------------------------|
-| DSSM         | [![status MatchZoo]][matchzoo code DSSM]  [![status official]][official code DSSM] | [todo](todo) | [todo](todo) | [todo](todo) | [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data, CIKM 2013]     |
-| CDSSM        | [![status MatchZoo]][matchzoo code CDSSM]                                          | [todo](todo) | [todo](todo) | [todo](todo) | [Learning Semantic Representations Using Convolutional Neural Networks for Web Search, WWW 2014] |
-| ARC-I        | [![status MatchZoo]][matchzoo code ARC-I]                                          | [todo](todo) | [todo](todo) | [todo](todo) | [Convolutional Neural Network Architectures for Matching Natural Language Sentences, NIPS 2014]  |
-| ARC-II       | [![status MatchZoo]][matchzoo code ARC-II]                                         | [todo](todo) | [todo](todo) | [todo](todo) | [Convolutional Neural Network Architectures for Matching Natural Language Sentences, NIPS 2014]  |
-| DRMM         | [![status MatchZoo]][matchzoo code DRMM]  [![status official]][official code DRMM] | [todo](todo) | [todo](todo) | [todo](todo) | [A Deep Relevance Matching Model for Ad-hoc Retrieval, CIKM 2016]                                |
-| MatchPyramid | [![status MatchZoo]][matchzoo code MatchPyramid]                                   | [todo](todo) | [todo](todo) | [todo](todo) | [Text Matching as Image Recognition, AAAI 2016]                                                  |
-| KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | [todo](todo) | [todo](todo) | [todo](todo) | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017]                               |
-| CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                                      | [todo](todo) | [todo](todo) | [todo](todo) | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018]            |
-| Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | [todo](todo) | [todo](todo) | [todo](todo) | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
-| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR]                | [todo](todo) | [todo](todo) | [todo](todo) | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018]                      |
-| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch]        | [todo](todo) | [todo](todo) | [todo](todo) | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017]    |
-| HiNT         | ![status not in plan]  [![status official]][official code HiNT]                    | [todo](todo) | [todo](todo) | [todo](todo) | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018]                            |
+| Model        | Code                                                                               | MRR@10                      | Recall@10                   | nDCG@10                     | Paper                                                                                            |
+|:-------------|:-----------------------------------------------------------------------------------|:----------------------------|:----------------------------|:----------------------------|:-------------------------------------------------------------------------------------------------|
+| DSSM         | [![status MatchZoo]][matchzoo code DSSM]  [![status official]][official code DSSM] | \\                          | \\                          | \\                          | [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data, CIKM 2013]     |
+| CDSSM        | [![status MatchZoo]][matchzoo code CDSSM]                                          | \\                          | \\                          | \\                          | [Learning Semantic Representations Using Convolutional Neural Networks for Web Search, WWW 2014] |
+| ARC-I        | [![status MatchZoo]][matchzoo code ARC-I]                                          | \\                          | \\                          | \\                          | [Convolutional Neural Network Architectures for Matching Natural Language Sentences, NIPS 2014]  |
+| ARC-II       | [![status MatchZoo]][matchzoo code ARC-II]                                         | \\                          | \\                          | \\                          | [Convolutional Neural Network Architectures for Matching Natural Language Sentences, NIPS 2014]  |
+| DRMM         | [![status MatchZoo]][matchzoo code DRMM]  [![status official]][official code DRMM] | \\                          | \\                          | \\                          | [A Deep Relevance Matching Model for Ad-hoc Retrieval, CIKM 2016]                                |
+| MatchPyramid | [![status MatchZoo]][matchzoo code MatchPyramid]                                   | [0.286][paper MSMARCO eval] | [0.531][paper MSMARCO eval] | [0.344][paper MSMARCO eval] | [Text Matching as Image Recognition, AAAI 2016]                                                  |
+| KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | [0.261][paper MSMARCO eval] | [0.519][paper MSMARCO eval] | [0.323][paper MSMARCO eval] | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017]                               |
+| CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                                      | [0.283][paper MSMARCO eval] | [0.542][paper MSMARCO eval] | [0.345][paper MSMARCO eval] | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018]            |
+| Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | [0.266][paper MSMARCO eval] | [0.520][paper MSMARCO eval] | [0.327][paper MSMARCO eval] | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
+| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR]                | [0.284][paper MSMARCO eval] | [0.543][paper MSMARCO eval] | [0.345][paper MSMARCO eval] | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018]                      |
+| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch]        | \\                          | \\                          | \\                          | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017]    |
+| HiNT         | ![status not in plan]  [![status official]][official code HiNT]                    | \\                          | \\                          | \\                          | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018]                            |
 
 
 ### MQ2007
@@ -198,6 +199,7 @@ following,
 [paper HiNT]: https://arxiv.org/pdf/1805.05737.pdf
 [paper CEDR]: https://arxiv.org/pdf/1904.07094.pdf
 [paper BertForIR]: https://arxiv.org/pdf/1905.09217.pdf
+[paper MSMARCO eval]: https://arxiv.org/pdf/2002.01854
 
 [Learning Deep Structured Semantic Models for Web Search using Clickthrough Data, CIKM 2013]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/cikm2013_DSSM_fullversion.pdf
 [Learning Semantic Representations Using Convolutional Neural Networks for Web Search, WWW 2014]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/www2014_cdssm_p07.pdf
@@ -212,4 +214,5 @@ following,
 [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018]: https://arxiv.org/pdf/1805.05737.pdf
 [CEDR: Contextualized Embeddings for Document Ranking, SIGIR 2019]: https://arxiv.org/pdf/1904.07094.pdf
 [Deeper Text Understanding for IR with Contextual Neural Language Modeling, SIGIR 2019]: https://arxiv.org/pdf/1905.09217.pdf
+[Interpretable & Time-Budget-Constrained Contextualization for Re-Ranking, ECAI 2020]: https://arxiv.org/pdf/2002.01854
 

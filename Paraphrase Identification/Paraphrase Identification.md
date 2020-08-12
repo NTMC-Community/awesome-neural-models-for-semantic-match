@@ -1,4 +1,4 @@
-### Paraphrase Identification
+# Paraphrase Identification
 
 ---
 
@@ -26,7 +26,7 @@ A list of neural matching models for paraphrase identification models are as fol
 
 
 
-# MRPC & SentEval
+## MRPC & SentEval
 In MRPC, value1/value2 means accuracy/f1 and a single value means only accuracy. 
 
 In STS and SICK, value1/value2 means pearson correlation/accuracy and a single value means only pearson correlation.
@@ -50,7 +50,7 @@ In STS and SICK, value1/value2 means pearson correlation/accuracy and a single v
 | PWIM (He and Lin, 2016) |[official](https://github.com/lukecq1231/nli) | \ |  \ | \  |76.7| [Pairwise Word Interaction Modeling with Deep Neural Networks for Semantic Similarity Measurement](https://www.aclweb.org/anthology/N16-1108.pdf)|
 
 
-# Quora Question Pair
+## Quora Question Pair
 
 | Model | Code | F1 | Accuracy | Paper/Source|
 | :-----:| :----: | :----: |:----: |:----: |

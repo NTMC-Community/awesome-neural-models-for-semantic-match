@@ -31,7 +31,7 @@ In MRPC, value1/value2 means accuracy/f1 and a single value means only accuracy.
 
 In STS and SICK, value1/value2 means pearson correlation/accuracy and a single value means only pearson correlation.
 
-| Model | Code | MRPC | SICK-R | SICK-E | STS | Paper/Source
+| Model | Code | MRPC | SICK-R | SICK-E | STS | Paper|
 | :-----:| :----: | :----: |:----: |:----: |:----: |:----: |:----: |
 | XLNet-Large (ensemble) (Yang et al., 2019) |  [official](https://github.com/zihangdai/xlnet/) | 93.0/90.7  |  \ | \ |  	91.6/91.1  | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) |
 |  MT-DNN-ensemble (Liu et al., 2019) |  [official](https://github.com/namisan/mt-dnn/) |92.7/90.3  | \  | \ |  91.1/90.7 |  [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | 
@@ -52,7 +52,7 @@ In STS and SICK, value1/value2 means pearson correlation/accuracy and a single v
 
 ## Quora Question Pair
 
-| Model | Code | F1 | Accuracy | Paper/Source|
+| Model | Code | F1 | Accuracy | Paper|
 | :-----:| :----: | :----: |:----: |:----: |
 | XLNet-Large (ensemble) (Yang et al., 2019) |   [official](https://github.com/zihangdai/xlnet/) | 74.2	 | 90.3 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) |
 |  MT-DNN-ensemble (Liu et al., 2019) | [official](https://github.com/namisan/mt-dnn/) | 73.7 | 89.9 |  [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | 

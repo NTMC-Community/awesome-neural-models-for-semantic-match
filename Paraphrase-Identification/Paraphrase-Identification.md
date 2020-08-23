@@ -17,11 +17,11 @@ Some benchmark datasets are listed in the following.
 
 |  Dataset    | pairs of sentence |
 |  ----  | ----  |
-|  MRPC  | 5800  |
-|  SentEval/STS  | 1750 |
-| SentEval/SICK-R | 9840 | 
-| SentEval/SICK-E | 9840 | 
-| Quora Question Pair| 404290 |]
+|  [MRPC](https://www.microsoft.com/en-us/download/details.aspx?id=52398&from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2F607d14d9-20cd-47e3-85bc-a2f65cd28042%2Fdefault.aspx)  | 5800  |
+|  [SentEval](https://arxiv.org/pdf/1803.05449.pdf)/STS  | 1750 |
+| [SentEval](https://arxiv.org/pdf/1803.05449.pdf)/SICK-R | 9840 | 
+| [SentEval](https://arxiv.org/pdf/1803.05449.pdf)/SICK-E | 9840 | 
+| [Quora Question Pair](https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs)| 404290 |]
 
 - [**MRPC**](https://www.microsoft.com/en-us/download/details.aspx?id=52398&from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2F607d14d9-20cd-47e3-85bc-a2f65cd28042%2Fdefault.aspx) is short for Microsoft Research Paraphrase Corpus. It contains 5,800 pairs of sentences which have been extracted from news sources on the web, along with human annotations indicating whether each pair captures a paraphrase/semantic equivalence relationship.
 - [**SentEval**](https://arxiv.org/pdf/1803.05449.pdf) encompasses semantic relatedness datasets including

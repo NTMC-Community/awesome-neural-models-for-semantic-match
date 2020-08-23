@@ -12,7 +12,7 @@
 |  [**Robust04**](https://trec.nist.gov/data/t13_robust.html)   | news  | 250  | 0.5M  |
 |  [**Cluebweb09-B**](https://trec.nist.gov/data/webmain.html)  |  web | 150  | 50M  |
 |  [**Gov2**](https://trec.nist.gov/data/terabyte.html) |  .gov pages | 150  | 25M  |
-|  [**MSMARCO Passage Reranking**](http://www.msmarco.org/dataset.aspx) |  web pages | 367,013 | 3.2M  |
+|  [**MS MARCO (Document Ranking)**](http://www.msmarco.org/dataset.aspx) |  web pages | 367,013 | 3.2M  |
 |  [**MQ2007**](https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/) |  .gov pages | 1692  | 25M  |
 |  [**MQ2008**](https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/) |  .gov pages | 794 | 25M  |
 
@@ -22,7 +22,7 @@
 
 * [**Gov2**](https://trec.nist.gov/data/terabyte.html) is a large Web collection where the pages are crawled from .gov. It consists of 25 million documents in total. The queries are accumulated over TREC Terabyte Tracks 2004, 2005, and 2006. There are 150 queries in total.
 
-* [**MSMARCO Passage Reranking**](http://www.msmarco.org/dataset.aspx) provides a large number of information question-style queries from Bing's search logs. There passages are annotated by humans with relevant/non-relevant labels. There are 8,841822 documents in total. There are 808,731queries, 6,980 queries and 48,598 queries for train, validation and test, respectively.
+* [**MS MARCO (Document Ranking)**](http://www.msmarco.org/dataset.aspx) provides a large number of information question-style queries from Bing's search logs. There passages are annotated by humans with relevant/non-relevant labels. There are 8,841822 documents in total. There are 808,731queries, 6,980 queries and 48,598 queries for train, validation and test, respectively.
 
 * [**Million Query TREC 2007 (MQ2007)**](http://www.msmarco.org/dataset.aspx) is a LETOR benchmark dataset which uses Gov2 web collection. There are 1692 queries in MQ2007 with 65,323 labeled documents.
 
@@ -53,17 +53,14 @@
 |  CONV-KNRM  | [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/conv_knrm.py)  | \\ | \\ |[0.270](https://arxiv.org/pdf/1905.09217.pdf)| [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018](http://www.cs.cmu.edu/~zhuyund/papers/WSDM_2018_Dai.pdf) |
 
 
-### Gov2
-|  Model   | Code  | MAP | P@20 | nDCG@20| Paper | 
+### MS MARCO (Document Ranking)
+|  Model   | Code  | MRR@10 | nDCG@10 | Recall@10| Paper | 
 |  ----  | ----  |----  | ----  | ----  | ----  |
-
-
-
-
-### MS MARCO
-|  Model   | Code  | MAP | P@20 | nDCG@20| Paper | 
-|  ----  | ----  |----  | ----  | ----  | ----  |
-
+| MatchPyramid| [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/pl8787/MatchPyramid-TensorFlow) [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/match_pyramid.py)| [0.286](https://arxiv.org/pdf/1710.05649.pdf)|[0.344](https://arxiv.org/pdf/2002.01854.pdf) |[0.531](https://arxiv.org/pdf/2002.01854.pdf) | [Text Matching as Image Recognition, AAAI 2016](https://arxiv.org/pdf/2002.01854.pdf) |
+|  Duet  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/bmitra-msft/NDRM/blob/master/notebooks/Duet.ipynb) [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/duet.py) |[0.266](https://arxiv.org/pdf/2002.01854.pdf) |[0.327](https://arxiv.org/pdf/2002.01854.pdf)|[0.520](https://arxiv.org/pdf/2002.01854.pdf)|[Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/10/wwwfp0192-mitra.pdf) |
+|  Co-PACRR  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/khui/copacrr) [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/awesome-neural-models-for-semantic-match/blob/master) | [0.284](https://arxiv.org/pdf/2002.01854.pdf) | [0.345](https://arxiv.org/pdf/2002.01854.pdf) | [0.543](https://arxiv.org/pdf/2002.01854.pdf) | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018](https://arxiv.org/pdf/1706.10192.pdf) |
+|  KNRM  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/AdeDZY/K-NRM) [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/knrm.py) | [0.261](https://arxiv.org/pdf/2002.01854.pdf) |[0.323](https://arxiv.org/pdf/2002.01854.pdf)|[0.519](https://arxiv.org/pdf/2002.01854.pdf) | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017](https://arxiv.org/pdf/1706.06613.pdf) |
+|  CONV-KNRM  | [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/conv_knrm.py)  | [0.283](https://arxiv.org/pdf/2002.01854.pdf) | [0.345](https://arxiv.org/pdf/2002.01854.pdf) |[0.542](https://arxiv.org/pdf/2002.01854.pdf)| [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018](http://www.cs.cmu.edu/~zhuyund/papers/WSDM_2018_Dai.pdf) |
 
 ### MQ2007
 |  Model   | Code  | MAP | P@10 | nDCG@10| Paper | 
@@ -90,5 +87,3 @@
 |  Duet  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/bmitra-msft/NDRM/blob/master/notebooks/Duet.ipynb) [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/duet.py) |[0.476](https://arxiv.org/pdf/1805.05737.pdf) |[0.240](https://arxiv.org/pdf/1805.05737.pdf)|[0.216](https://arxiv.org/pdf/1805.05737.pdf)|[Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/10/wwwfp0192-mitra.pdf) |
 |  DeepRank  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/pl8787/DeepRank_PyTorch) [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/awesome-neural-models-for-semantic-match/blob/master) |0.498 |0.252|0.240 | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017](https://arxiv.org/pdf/1710.05649.pdf) |
 |  HiNT  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/faneshion/HiNT)[![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/awesome-neural-models-for-semantic-match/blob/master)|0.505 |0.255|0.244 |  [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018](https://arxiv.org/pdf/1805.05737.pdf)|
-
-<!-- |  Co-PACRR  | [code](https://github.com/NTMC-Community/awesome-neural-models-for-semantic-match/blob/master) | \\ | \\ | \\ | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018](https://arxiv.org/pdf/1706.10192.pdf) | -->

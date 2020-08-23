@@ -55,7 +55,8 @@ A list of neural matching models for paraphrase identification models are as fol
 
 
 ## SentEval
-The evaluation metric for STS and SICK-R is Pearson correlation
+The evaluation metric for STS and SICK-R is Pearson correlation.
+
 The evaluation metri for SICK-E is classification accuracy.
 
 | Model | Code |  SICK-R | SICK-E | STS | Paper|

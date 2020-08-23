@@ -25,8 +25,8 @@ Some benchmark datasets are listed in the following.
 
 - [**MRPC**](https://www.microsoft.com/en-us/download/details.aspx?id=52398&from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2F607d14d9-20cd-47e3-85bc-a2f65cd28042%2Fdefault.aspx) is short for Microsoft Research Paraphrase Corpus. It contains 5,800 pairs of sentences which have been extracted from news sources on the web, along with human annotations indicating whether each pair captures a paraphrase/semantic equivalence relationship.
 - [**SentEval**](https://arxiv.org/pdf/1803.05449.pdf) encompasses semantic relatedness datasets including
-SICK and the STS Benchmark dataset. And SICK dataset includes two subtasks SICK-R and SICK-E.
-For STS and SICK-R, it learns to predict relatedness scores between a pair of sentences. For SICK-E, it has the same pairs of sentences with SICK-R but can be treated as a three-class classification problem (classes are 'entailment', 'contradiction’, and 'neutral'). The evaluation metric for SICK-R is Pearson correlation and classification accuracy for SICK-E.
+SICK and the STS Benchmark dataset. SICK dataset includes two subtasks SICK-R and SICK-E.
+For STS and SICK-R, it learns to predict relatedness scores between a pair of sentences. For SICK-E, it has the same pairs of sentences with SICK-R but can be treated as a three-class classification problem (classes are 'entailment', 'contradiction’, and 'neutral').
 
 - [**Quora Question Pairs**](https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs) is a task released by Quora which aims to identify duplicate questions. It consists of over 400,000 pairs of questions on Quora, and each question pair is annotated with a binary value indicating whether the two questions are paraphrase of each other.
 
@@ -55,19 +55,20 @@ A list of neural matching models for paraphrase identification models are as fol
 
 
 ## SentEval
-In STS and SICK, value1/value2 means pearson correlation/accuracy and a single value means only pearson correlation.
+The evaluation metric for STS and SICK-R is Pearson correlation
+The evaluation metri for SICK-E is classification accuracy.
 
 | Model | Code |  SICK-R | SICK-E | STS | Paper|
 | :-----:| :----: | :----: |:----: |:----: |:----: |
-| XLNet-Large (ensemble) (Yang et al., 2019) |  [official](https://github.com/zihangdai/xlnet/) |  \ | \ |  	91.6/91.1  | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) |
+| XLNet-Large (ensemble) (Yang et al., 2019) |  [official](https://github.com/zihangdai/xlnet/) |  \ | \ |  	91.6  | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) |
 |  MT-DNN-ensemble (Liu et al., 2019) |  [official](https://github.com/namisan/mt-dnn/) | \  | \ |  91.1/90.7 |  [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | 
-|  Snorkel MeTaL(ensemble) (Ratner et al., 2018) | [official](https://github.com/HazyResearch/metal) | \  |  \ |  90.1/89.7 |  [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | 
-| GenSen (Subramanian et al., 2018)  |  [official](https://github.com/Maluuba/gensen) |  88.8 | 87.8  |  78.9/78.6	 |  [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) |
-| InferSent (Conneau et al., 2017) |[official](https://github.com/facebookresearch/InferSent)  | 88.4	  | 86.3 |  75.8/75.5 |  [Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364) |
-| SpanBert (Joshi et al., 2019)  |  [official](https://github.com/facebookresearch/SpanBERT) | \  | \  |  89.9/89.1  | [SpanBERT: Improving Pre-training by Representing and Predicting Spans](https://arxiv.org/pdf/1907.10529.pdf) | 
-|  MT-DNN (Liu et al., 2019) |  [official](https://github.com/namisan/mt-dnn) |  \  |  \  | 89.5/88.8  | [Multi-Task Deep Neural Networks for Natural Language Understanding](https://arxiv.org/pdf/1901.11504.pdf) |  
+|  Snorkel MeTaL(ensemble) (Ratner et al., 2018) | [official](https://github.com/HazyResearch/metal) | \  |  \ |  90.1 |  [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | 
+| GenSen (Subramanian et al., 2018)  |  [official](https://github.com/Maluuba/gensen) |  88.8 | 87.8  |  78.9	 |  [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) |
+| InferSent (Conneau et al., 2017) |[official](https://github.com/facebookresearch/InferSent)  | 88.4	  | 86.3 |  75.8 |  [Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364) |
+| SpanBert (Joshi et al., 2019)  |  [official](https://github.com/facebookresearch/SpanBERT) | \  | \  |  89.9  | [SpanBERT: Improving Pre-training by Representing and Predicting Spans](https://arxiv.org/pdf/1907.10529.pdf) | 
+|  MT-DNN (Liu et al., 2019) |  [official](https://github.com/namisan/mt-dnn) |  \  |  \  | 89.5  | [Multi-Task Deep Neural Networks for Natural Language Understanding](https://arxiv.org/pdf/1901.11504.pdf) |  
 | ERNIE (Zhang et al. 2019)  | [official]( https://github.com/thunlp/ERNIE) |  \  |  \  | 83.2 | [ERNIE: Enhanced Language Representation with Informative Entities](https://arxiv.org/pdf/1905.07129.pdf) | 
-| PWIM (He and Lin, 2016) |[official](https://github.com/lukecq1231/nli) |   \ | \  |76.7| [Pairwise Word Interaction Modeling with Deep Neural Networks for Semantic Similarity Measurement](https://www.aclweb.org/anthology/N16-1108.pdf)|
+| PWIM (He and Lin, 2016) |[official](https://github.com/lukecq1231/nli) |   \ | \  | 76.7 | [Pairwise Word Interaction Modeling with Deep Neural Networks for Semantic Similarity Measurement](https://www.aclweb.org/anthology/N16-1108.pdf)|
 
 
 ## Quora Question Pair

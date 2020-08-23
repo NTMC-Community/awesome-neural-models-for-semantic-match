@@ -61,7 +61,7 @@ The evaluation metri for SICK-E is classification accuracy.
 | Model | Code |  SICK-R | SICK-E | STS | Paper|
 | :-----:| :----: | :----: |:----: |:----: |:----: |
 | XLNet-Large (ensemble) (Yang et al., 2019) |  [official](https://github.com/zihangdai/xlnet/) |  \ | \ |  	91.6  | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) |
-|  MT-DNN-ensemble (Liu et al., 2019) |  [official](https://github.com/namisan/mt-dnn/) | \  | \ |  91.1/90.7 |  [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | 
+|  MT-DNN-ensemble (Liu et al., 2019) |  [official](https://github.com/namisan/mt-dnn/) | \  | \ |  91.1 |  [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | 
 |  Snorkel MeTaL(ensemble) (Ratner et al., 2018) | [official](https://github.com/HazyResearch/metal) | \  |  \ |  90.1 |  [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | 
 | GenSen (Subramanian et al., 2018)  |  [official](https://github.com/Maluuba/gensen) |  88.8 | 87.8  |  78.9	 |  [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) |
 | InferSent (Conneau et al., 2017) |[official](https://github.com/facebookresearch/InferSent)  | 88.4	  | 86.3 |  75.8 |  [Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364) |

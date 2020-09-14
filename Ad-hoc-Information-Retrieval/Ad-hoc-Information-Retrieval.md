@@ -84,7 +84,7 @@ following,
 |  CONV-KNRM  | [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/conv_knrm.py)  | — | — |[0.416](https://arxiv.org/pdf/1905.09217.pdf)| [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018](http://www.cs.cmu.edu/~zhuyund/papers/WSDM_2018_Dai.pdf) |
 |  BERT-MaxP  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/AdeDZY/SIGIR19-BERT-IR) | — | — |0.469| [Deeper Text Understanding for IR with Contextual Neural Language Modeling, SIGIR 2019](https://arxiv.org/pdf/1905.09217.pdf) |
 |  CEDR-DRMM  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/Georgetown-IR-Lab/cedr) | — | 0.459 |0.526| [CEDR: Contextualized Embeddings for Document Ranking, SIGIR 2019](https://arxiv.org/pdf/1904.07094.pdf) |
-
+|  QINM  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/TJUIRLAB/SIGIR20_QINM) | 0.294 | 0.408 |0.453| [A Quantum Interference Inspired Neural Matching Model for Ad-hoc Retrieval, SIGIR 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401070) |
 
 
 ### ClueWeb09-B
@@ -98,7 +98,7 @@ following,
 |  DRMM  |  [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/faneshion/DRMM)[![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/drmm.py)| 0.133| 0.365 | 0.258 | [A Deep Relevance Matching Model for Ad-hoc Retrieval, CIKM 2016](http://www.bigdatalab.ac.cn/~gjf/papers/2016/CIKM2016a_guo.pdf) |
 |  CONV-KNRM  | [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo/blob/master/matchzoo/models/conv_knrm.py)  | — | — |[0.270](https://arxiv.org/pdf/1905.09217.pdf)| [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018](http://www.cs.cmu.edu/~zhuyund/papers/WSDM_2018_Dai.pdf) |
 |  BERT-MaxP  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/AdeDZY/SIGIR19-BERT-IR) | — | — |0.289| [Deeper Text Understanding for IR with Contextual Neural Language Modeling, SIGIR 2019](https://arxiv.org/pdf/1905.09217.pdf) |
-
+|  QINM  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/TJUIRLAB/SIGIR20_QINM) | 0.134 | 0.375 |0.338| [A Quantum Interference Inspired Neural Matching Model for Ad-hoc Retrieval, SIGIR 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401070) |
 
 ### MS MARCO (Document Ranking)
 

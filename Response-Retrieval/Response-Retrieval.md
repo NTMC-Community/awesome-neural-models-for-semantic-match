@@ -9,18 +9,12 @@ Example:
 
 |Dataset |Partition | #Context Response pair | #Candidate per Context | Positive:Negative |Avg #turns per context|
 |---- | ---- | ---- |---- | ---- | ---- |
-|UDC| train| 1M| 2| 1:1| 10.13|
-|UDC| validation | 500k | 10| 1:9|10.11|
-|UDC| test| 500k | 10| 1:9 | 10.11|
-|[**Douban**](https://github.com/MarkWuNLP/MultiTurnResponseSelection)| train| 1M |2|1:1|6.69|
-|[**Douban**](https://github.com/MarkWuNLP/MultiTurnResponseSelection)|validation| 50k| 2| 1:1| 6.75|
-|[**Douban**](https://github.com/MarkWuNLP/MultiTurnResponseSelection)| test| 10k| 10| 1.18:8.82| 6.45|
-|[**MSDialog**](https://ciir.cs.umass.edu/downloads/msdialog/)| train| 173k | 10|1:9|5.0|
-|[**MSDialog**](https://ciir.cs.umass.edu/downloads/msdialog/)| validation| 37k| 10| 1:9| 4.9|
-|[**MSDialog**](https://ciir.cs.umass.edu/downloads/msdialog/)| test | 35k| 10 |1:9| 4.4|
-|[**EDC**](https://github.com/cooelf/DeepUtteranceAggregation)| train| 1M| 2| 1:1| 5.51|
-|[**EDC**](https://github.com/cooelf/DeepUtteranceAggregation)| validation| 10k| 2| 1:1| 5.48|
-|[**EDC**](https://github.com/cooelf/DeepUtteranceAggregation)| test | 10k| 10 | 1:9 | 5.64|
+|UDC| train/validation/test| 1M/500k/500k| 2/10/10| 1:1/1:9/1:9| 10.13/10.11/10.11|
+|[**Douban**](https://github.com/MarkWuNLP/MultiTurnResponseSelection)| train/validation/test| 1M/50k/10k |2/2/10|1:1/1:1/1.18:8.82|6.69/6.75/6.45|
+|[**MSDialog**](https://ciir.cs.umass.edu/downloads/msdialog/)| train/validation/test| 173k/37k/35k | 10/10/10|1:9/1:9/1:9|5.0/4.9/4.4|
+|[**EDC**](https://github.com/cooelf/DeepUtteranceAggregation)| train/validation/test| 1M/10k/10k| 2/2/10| 1:1/1:1/1:9| 5.51/5.48/5.64|
+|Persona-Chat dataset| 8939/1000/968 | 20/20/20 | 1:19/1:19/1:19 | 7.35/7.80/7.76 |
+|CMUDoG dataset| 2881/196/537 | 20/20/20 | 1:19/1:19/1:19 | 12.55/12.37/12.36 |
 
 - Ubuntu Dialog Corpus (UDC) contains multi-turn dialogues collected from chat logs of the Ubuntu Forum. The data set consists of 1 million context-response pairs for training, 0.5 million pairs for validation, and 0.5 million pairs for testing. Positive responses are true responses from humans, and negative ones are randomly sampled. The ratio of the positive and the negative is 1:1 in training, and 1:9 in validation and testing. 
 - [**Douban Conversation Corpus**](https://github.com/MarkWuNLP/MultiTurnResponseSelection) is an open domain dataset constructed from Douban group (a popular social networking service in China). The data set consists of 1 million context-response pairs for training, 50k pairs for validation, and 10k pairs for testing, corresponding to 2, 2, and 10 response candidates per context respectively. Response candidates on the test set, retrieved from Sina Weibo (the largest microblogging service in China), are labeled by human judges.
@@ -47,7 +41,9 @@ $R_n@k$: recall at position $k$ in $n$ candidates.
 |IMN(Gu et al. 2019 b)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/JasonForJoy/IMN)| — |	0.946 |	0.794 |	0.889 |	0.974|[Interactive Matching Network for Multi-Turn Response Selection in Retrieval-Based Chatbots, arXiv 2019](https://arxiv.org/pdf/1901.01824v2.pdf)|multi-turn|
 |IOI-local(Tao et al. 2019)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/chongyangtao/IOI)| — | 0.947 | 	0.796 | 	0.894 | 	0.974 | [One Time of Interaction May Not Be Enough: Go Deep with an Interaction-over-Interaction Network for Response Selection in Dialogues, ACL 2019](https://www.aclweb.org/anthology/P19-1001.pdf) |multi-turn|
 |MSN(Yuan et al. 2019)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/chunyuanY/Dialogue)|— |— |	0.8 |	0.899 |	0.978 | [Multi-hop Selector Network for Multi-turn Response Selection in Retrieval-based Chatbots, ACL 2019](https://www.aclweb.org/anthology/D19-1011.pdf) |multi-turn|
-|SA-BERT(Gu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/JasonForJoy/SA-BERT)| — |	**0.965** |	**0.855** |	**0.928** |	**0.983** |[Speaker-Aware BERT for Multi-Turn Response Selection in Retrieval-Based Chatbots, arXiv 2020](https://arxiv.org/pdf/2004.03588v1.pdf)|multi-turn|
+|SA-BERT (Gu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/JasonForJoy/SA-BERT)| — |	**0.965** |	**0.855** |	**0.928** |	**0.983** |[Speaker-Aware BERT for Multi-Turn Response Selection in Retrieval-Based Chatbots, arXiv 2020](https://arxiv.org/pdf/2004.03588v1.pdf)|multi-turn|
+|RoBERTaBASE-SS-DA (Lu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/CSLujunyu/Improving-Contextual-Language-Modelsfor-Response-Retrieval-in-Multi-Turn-Conversation) | - |0.955 |0.826 |0.909 |0.978 | [Improving Contextual Language Models for Response Retrieval in Multi-Turn Conversation, SIGIR 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401255) | multi-turn|
+|SMN + ECMo (Tao et al. 2020)| N/A | - |0.934 |0.756 |0.867 |0.966 |[Improving Matching Models with Hierarchical Contextualized Representations for Multi-turn Response Selection, SIGIR 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401290) | multi-turn|
 
 
 ### Douban Conversation Corpus
@@ -65,6 +61,9 @@ $R_n@k$: recall at position $k$ in $n$ candidates.
 |IOI-local(Tao et al. 2019)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/chongyangtao/IOI)| 0.573 | 0.621 |	0.444 |	0.269 |	0.451 |	0.786 |[One Time of Interaction May Not Be Enough: Go Deep with an Interaction-over-Interaction Network for Response Selection in Dialogues, ACL 2019](https://www.aclweb.org/anthology/P19-1001.pdf)|multi-turn|
 |MSN(Yuan et al. 2019)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/chunyuanY/Dialogue)| 0.587 | 0.632 |	0.470 |	0.295 |	0.452 |	0.788 |[Multi-hop Selector Network for Multi-turn Response Selection in Retrieval-based Chatbots, ACL 2019](https://www.aclweb.org/anthology/D19-1011.pdf)|multi-turn|
 |SA-BERT(Gu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/JasonForJoy/SA-BERT)| **0.619** | **0.659** |	**0.496** |	**0.313** |	**0.481** |	**0.847** |[Speaker-Aware BERT for Multi-Turn Response Selection in Retrieval-Based Chatbots, arXiv 2020](https://arxiv.org/pdf/2004.03588v1.pdf)|multi-turn|
+|RoBERTaBASE-SS-DA (Lu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/CSLujunyu/Improving-Contextual-Language-Modelsfor-Response-Retrieval-in-Multi-Turn-Conversation) | 0.602 | 0.646 | 0.460 | 0.280 | 0.495 | 0.847 | [Improving Contextual Language Models for Response Retrieval in Multi-Turn Conversation, SIGIR 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401255) | multi-turn|
+|SMN + ECMo (Tao et al. 2020)| N/A | 0.549 | 0.593 | 0.409 | 0.247 | 0.416 | 0.774 |[Improving Matching Models with Hierarchical Contextualized Representations for Multi-turn Response Selection, SIGIR 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401290) | multi-turn|
+
 
 ### MSDialog
 
@@ -85,4 +84,20 @@ $R_n@k$: recall at position $k$ in $n$ candidates.
 |IMN(Gu et al. 2019 b)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/JasonForJoy/IMN)| — |	0.621 |	0.797 |	0.964 |[Interactive Matching Network for Multi-Turn Response Selection in Retrieval-Based Chatbots, arXiv 2019](https://arxiv.org/pdf/1901.01824v2.pdf)|multi-turn|
 |IOI-local(Tao et al. 2019)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/chongyangtao/IOI)|— |	0.563 |	0.768 |	0.950 |[One Time of Interaction May Not Be Enough: Go Deep with an Interaction-over-Interaction Network for Response Selection in Dialogues, ACL 2019](https://www.aclweb.org/anthology/P19-1001.pdf)|multi-turn|
 |MSN(Yuan et al. 2019)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/chunyuanY/Dialogue)| — |	0.606 |	0.770 |	0.937 |[Multi-hop Selector Network for Multi-turn Response Selection in Retrieval-based Chatbots, ACL 2019](https://www.aclweb.org/anthology/D19-1011.pdf)|multi-turn|
-|SA-BERT(Gu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/JasonForJoy/SA-BERT)| — |	**0.704** |	**0.879** |	**0.985** |[Speaker-Aware BERT for Multi-Turn Response Selection in Retrieval-Based Chatbots, arXiv 2020](https://arxiv.org/pdf/2004.03588v1.pdf)|multi-turn|
+|SA-BERT(Gu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/JasonForJoy/SA-BERT)| — |	0.704 |	0.879 |	**0.985** |[Speaker-Aware BERT for Multi-Turn Response Selection in Retrieval-Based Chatbots, arXiv 2020](https://arxiv.org/pdf/2004.03588v1.pdf)|multi-turn|
+|RoBERTaBASE-SS-DA (Lu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/CSLujunyu/Improving-Contextual-Language-Modelsfor-Response-Retrieval-in-Multi-Turn-Conversation) | - | **0.800** | **0.910** | 0.972 | [Improving Contextual Language Models for Response Retrieval in Multi-Turn Conversation, SIGIR 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401255) | multi-turn|
+
+### Persona-Chat dataset
+Orinigal Persona
+| Model | Code | $R_{20}@1$ | $R_{20}@2$ | $R_{20}@5$ | Paper | type | 
+| ----  | ---- | ---- | ----| ---- | ---- | ---- |
+| RSM-DCK (Hua et al. 2020) | N/A | 0.7965 | 0.9021 | 0.9747 | [Learning to Detect Relevant Contexts and Knowledge for Response Selection in Retrieval-based Dialogue Systems, CIKM 2020](https://dl.acm.org/doi/pdf/10.1145/3340531.3411967) | multi-turn |
+Revised Person
+| Model | Code | $R_{20}@1$ | $R_{20}@2$ | $R_{20}@5$ | Paper | type | 
+| ----  | ---- | ---- | ----| ---- | ---- | ---- |
+| RSM-DCK (Hua et al. 2020) | N/A | 0.7185 | 0.8494 | 0.9550 | [Learning to Detect Relevant Contexts and Knowledge for Response Selection in Retrieval-based Dialogue Systems, CIKM 2020](https://dl.acm.org/doi/pdf/10.1145/3340531.3411967) | multi-turn |
+### CMUDoG dataset
+| Model | Code | $R_{20}@1$ | $R_{20}@2$ | $R_{20}@5$ | Paper | type | 
+| ----  | ---- | ---- | ----| ---- | ---- | ---- |
+| RSM-DCK (Hua et al. 2020) | N/A | 0.7925 | 0.8884 | 0.9666 | [Learning to Detect Relevant Contexts and Knowledge for Response Selection in Retrieval-based Dialogue Systems, CIKM 2020](https://dl.acm.org/doi/pdf/10.1145/3340531.3411967) | multi-turn |
+

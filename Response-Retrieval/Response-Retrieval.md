@@ -88,11 +88,13 @@ $R_n@k$: recall at position $k$ in $n$ candidates.
 |RoBERTaBASE-SS-DA (Lu et al. 2020)|[![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/CSLujunyu/Improving-Contextual-Language-Modelsfor-Response-Retrieval-in-Multi-Turn-Conversation) | - | **0.800** | **0.910** | 0.972 | [Improving Contextual Language Models for Response Retrieval in Multi-Turn Conversation, SIGIR 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401255) | multi-turn|
 
 ### Persona-Chat dataset
+
 Orinigal Persona
 | Model | Code | $R_{20}@1$ | $R_{20}@2$ | $R_{20}@5$ | Paper | type | 
 | ----  | ---- | ---- | ----| ---- | ---- | ---- |
 | RSM-DCK (Hua et al. 2020) | N/A | 0.7965 | 0.9021 | 0.9747 | [Learning to Detect Relevant Contexts and Knowledge for Response Selection in Retrieval-based Dialogue Systems, CIKM 2020](https://dl.acm.org/doi/pdf/10.1145/3340531.3411967) | multi-turn |
-Revised Person
+
+Revised Persona
 | Model | Code | $R_{20}@1$ | $R_{20}@2$ | $R_{20}@5$ | Paper | type | 
 | ----  | ---- | ---- | ----| ---- | ---- | ---- |
 | RSM-DCK (Hua et al. 2020) | N/A | 0.7185 | 0.8494 | 0.9550 | [Learning to Detect Relevant Contexts and Knowledge for Response Selection in Retrieval-based Dialogue Systems, CIKM 2020](https://dl.acm.org/doi/pdf/10.1145/3340531.3411967) | multi-turn |

@@ -26,6 +26,7 @@ Where **s** and **t** are source text input and target text input, respectively.
 |     [Paraphrase Identification](Paraphrase-Identification/Paraphrase-Identification.md)     |     string1     |         string2          |
 |    [Natural Language Inference](Natural-Language-Inference/Natural-Language-Inference.md)    |     premise     |        hypothesis        |
 |                [Response Retrieval](Response-Retrieval/Response-Retrieval.md)                |    context/utterances     |         response         |
+|                [Long Form Question Answering](LFQA/LFQA.md)                |    question+document    |         answer         |
 
 ### Healthcheck
 
